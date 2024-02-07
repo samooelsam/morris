@@ -1,0 +1,27 @@
+
+.nav-section{
+    box-shadow:0 2px 3px #cecece;
+    .techvertu-navigate-to-section{
+    
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                margin:0 60px;
+                
+                a{
+                    display: block;
+                    font-family: changa;
+                    font-size:18px;
+                    padding:5px 10px;
+                    color:$darkGray;
+                    border-bottom: 2px solid transparent;
+                }
+                a.active{
+                    color:$AlternativeSpot;
+                    border-bottom:2px solid $AlternativeSpot;
+                }
+            }
+        }
+    }
+}

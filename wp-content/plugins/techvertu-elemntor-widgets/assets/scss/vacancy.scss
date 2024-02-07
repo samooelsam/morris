@@ -1,0 +1,113 @@
+.vacancy-item{
+    display: inline-block;
+    vertical-align: top;
+    background-color:#fff;
+    border-radius: $borderRadiusLight;
+    border:1px solid #fafafa;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right:1%;
+    width: 23.7%;
+    &:last-child{
+        margin-right: 0;
+    }
+    @include transition;
+    &:hover{
+        box-shadow:0px -1px 15px -1px $mainSpot;
+        @include transition;
+        figure.image-wrapper{
+            @include mainBackgroundGradient;
+            @include transition;
+            a{
+                h3{
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .vacancy-content{
+        margin-top:20px;
+        ul{
+            li{
+                margin-bottom: 20px;
+                color:$semiBlack;
+                list-style: none;
+                font-size: 17px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            
+        }
+    }
+    .image-wrapper{
+        width: 200px;
+        height: 200px;
+        background-color: #FAFAFA;
+        border-radius: 50%;
+        margin: 0 auto !important;
+        @include transition;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            h3{
+                font-size: 20px;
+                font-weight: bold;
+                color: $darkGray;
+                line-height: 24px;
+            }
+        }
+    }
+    .vacancy-footer{
+        text-align: center;
+        margin-top: 20px;
+        a.apply-btn{
+            @include buttonBorderd;
+            display: inline-block;
+            padding: 8px 20px;
+            &:hover{
+                @include mainBackgroundGradient;
+                color:#fff;
+                border:2px solid transparent;
+            }
+        }
+    }
+}
+.vacancy-item.linkedin{
+    background-color: #007EBB;
+    h3, p{
+        text-align: center;
+        color:#fff;
+        font-size: 20px;
+    }
+    h3{
+        font-size: 23px;
+        font-weight: bold;
+        max-width: 110px;
+        line-height: 20px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    p{
+        margin-bottom: 29px;
+    }
+    a.apply-btn{
+        border-color: #fff;
+        color:#fff;
+    }
+    &:hover{
+        figure.image-wrapper{
+            background-color: #fafafa;
+            background-image: none;
+        }
+    }
+}
+.no-item{
+    float:left;
+    width:76%;
+}

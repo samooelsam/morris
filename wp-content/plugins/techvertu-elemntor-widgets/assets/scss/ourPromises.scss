@@ -1,0 +1,102 @@
+.techvertu-our-promises{
+    .our-promise-item{
+        display: inline-block;
+        vertical-align: top;
+        width: 23%;
+        margin-right: 1%;
+        &:hover{
+            @include transition;
+            .image-wrapper{
+                img{
+                    filter:inherit;
+                    @include transition;
+                }
+                &:after{
+                    background-color:#fff;
+                    background-image:none;
+                    @include transition;
+                }
+                &:before{
+                    background-color:#fff;
+                    opacity: 0.4;
+                    @include transition;
+                }
+            }
+            .our-promise-content{
+                h3{
+                    color:$mainSpot; 
+                }
+                p{
+                    color:#fff;
+                }
+            }
+        }
+        .image-wrapper{
+            width: 150px;
+            height: 150px;
+            border-radius: $borderRadiusLight;
+            padding: 40px;
+            position: relative;
+            z-index: 0;
+            margin: 0 auto !important;
+            
+            img{
+                margin-top: 14px;
+                filter:brightness(0) invert(1);
+            }
+            &:after{
+                position: absolute;
+                content:"";
+                width: 150px;
+                height: 150px;
+                @include mainBackgroundGradient();
+                top: 10px;
+                z-index: -1;
+                left: 0;
+                border-radius: $borderRadiusLight;
+            }
+            &:before{
+                position: absolute;
+                content:"";
+                width: 150px;
+                height: 150px;
+                background-color: rgba(0,0,0,0.3);
+                transform: rotate(0.479turn);
+                top: 20px;
+                z-index: -1;
+                left: 10px;
+                border-radius: $borderRadiusLight;
+            }
+        }
+        .our-promise-content{
+            margin-top:30px;
+            p{
+                font-size:20px;
+                line-height: 35px;
+                color:$grayStorke;
+                text-align: center;
+            }
+            h3{
+                font-size:22px;
+                text-align: center;
+                color:#fff;
+                font-weight: bold;
+                display: block;
+            }
+        }
+    }
+}
+html {
+
+    .promises{
+        .our-brand-heading{
+
+            h2{
+                color:#fff !important;
+                span.different-color-heading{
+                    color:$mainSpot !important;
+                }
+            }
+        }
+    }
+}

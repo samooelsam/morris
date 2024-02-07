@@ -1,0 +1,936 @@
+.techvertu-our-promises .our-promise-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  margin-right: 1%; }
+  .techvertu-our-promises .our-promise-item:hover {
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s; }
+    .techvertu-our-promises .our-promise-item:hover .image-wrapper img {
+      filter: inherit;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -webkit-transition: all 0.2s ease-in-out 0s; }
+    .techvertu-our-promises .our-promise-item:hover .image-wrapper:after {
+      background-color: #fff;
+      background-image: none;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -webkit-transition: all 0.2s ease-in-out 0s; }
+    .techvertu-our-promises .our-promise-item:hover .image-wrapper:before {
+      background-color: #fff;
+      opacity: 0.4;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -webkit-transition: all 0.2s ease-in-out 0s; }
+    .techvertu-our-promises .our-promise-item:hover .our-promise-content h3 {
+      color: #ED6B06; }
+    .techvertu-our-promises .our-promise-item:hover .our-promise-content p {
+      color: #fff; }
+  .techvertu-our-promises .our-promise-item .image-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto !important; }
+    .techvertu-our-promises .our-promise-item .image-wrapper img {
+      margin-top: 14px;
+      filter: brightness(0) invert(1); }
+    .techvertu-our-promises .our-promise-item .image-wrapper:after {
+      position: absolute;
+      content: "";
+      width: 150px;
+      height: 150px;
+      background-color: transparent;
+      background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+      top: 10px;
+      z-index: -1;
+      left: 0;
+      border-radius: 10px; }
+    .techvertu-our-promises .our-promise-item .image-wrapper:before {
+      position: absolute;
+      content: "";
+      width: 150px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.3);
+      transform: rotate(0.479turn);
+      top: 20px;
+      z-index: -1;
+      left: 10px;
+      border-radius: 10px; }
+  .techvertu-our-promises .our-promise-item .our-promise-content {
+    margin-top: 30px; }
+    .techvertu-our-promises .our-promise-item .our-promise-content p {
+      font-size: 20px;
+      line-height: 35px;
+      color: #D8DADF;
+      text-align: center; }
+    .techvertu-our-promises .our-promise-item .our-promise-content h3 {
+      font-size: 22px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      display: block; }
+
+html .promises .our-brand-heading h2 {
+  color: #fff !important; }
+  html .promises .our-brand-heading h2 span.different-color-heading {
+    color: #ED6B06 !important; }
+
+.filters-wrapper {
+  border: 1px solid #008EAA;
+  border-radius: 0 15px 15px 15px;
+  padding: 36px 44px;
+  box-sizing: border-box; }
+  .filters-wrapper h3 {
+    color: #008EAA;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 20px; }
+  .filters-wrapper h4 {
+    color: #ED6B06;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .filters-wrapper p {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 34px 0;
+    font-family: 'changa';
+    color: #53575A;
+    font-weight: lighter; }
+
+.techvertu-filter-holder {
+  margin-bottom: 40px; }
+
+.techvertu-filter-wrapper label {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: block;
+  margin-top: 11px;
+  display: inline-block;
+  width: 30%; }
+  .techvertu-filter-wrapper label svg {
+    display: inline-block;
+    vertical-align: middle; }
+.techvertu-filter-wrapper input[type="text"] {
+  width: 67%;
+  display: inline-block; }
+.techvertu-filter-wrapper ul li {
+  display: inline-block;
+  width: 46%;
+  text-align: center;
+  margin-right: 3%;
+  margin-left: 0; }
+  .techvertu-filter-wrapper ul li input {
+    display: none; }
+  .techvertu-filter-wrapper ul li a {
+    border: 1px solid #373737;
+    display: block;
+    border-radius: 10px;
+    padding: 1px;
+    color: #53575A;
+    font-weight: 400;
+    font-size: 17px; }
+    .techvertu-filter-wrapper ul li a:hover {
+      background-color: #008EAA;
+      color: #fff;
+      border-color: #fff; }
+
+.techvertu-filter-wrapper {
+  margin-top: 27px; }
+  .techvertu-filter-wrapper select, .techvertu-filter-wrapper input[type="text"], .techvertu-filter-wrapper input[type="number"] {
+    width: 67%;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid #373737;
+    font-size: 17px;
+    padding-left: 15px; }
+    .techvertu-filter-wrapper select::placeholder, .techvertu-filter-wrapper input[type="text"]::placeholder, .techvertu-filter-wrapper input[type="number"]::placeholder {
+      color: #cecece; }
+  .techvertu-filter-wrapper input[type="submit"] {
+    width: 100%;
+    background-color: #ED6B06;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ED6B06;
+    background-color: transparent;
+    background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s; }
+    .techvertu-filter-wrapper input[type="submit"]:hover {
+      background-color: transparent;
+      color: #fafafa;
+      border: 1px solid #cde3f9;
+      box-shadow: 0px 5px 20px -10px #ED6B06;
+      transform: translateY(-5%); }
+
+html .techvertu-filter-wrapper.filter-box-result label {
+  color: #008EAA; }
+html .techvertu-filter-wrapper.filter-box-result input {
+  border-color: #008EAA;
+  border-width: 2px;
+  background-color: rgba(0, 142, 170, 0.1);
+  color: #008EAA;
+  font-weight: bold; }
+
+.techvertu-tab-container ul li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 0; }
+  .techvertu-tab-container ul li a {
+    display: block;
+    background-color: #D9D9D9;
+    color: #999999;
+    font-size: 22px;
+    padding: 4px 20px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    text-transform: uppercase; }
+    .techvertu-tab-container ul li a:before {
+      content: "";
+      position: absolute;
+      right: -18px;
+      border-right: 9px solid transparent;
+      border-bottom: 16px solid #d9d9d9;
+      border-left: 11px solid #d9d9d9;
+      border-top: 23px solid transparent;
+      bottom: 0; }
+.techvertu-tab-container ul li.active a {
+  background-color: #008EAA;
+  z-index: 10;
+  color: #fff; }
+  .techvertu-tab-container ul li.active a:before {
+    border-bottom-color: #008EAA;
+    border-left-color: #008EAA; }
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+  width: 10000em;
+  position: relative;
+  /* Optional, required in this case since it's a <ul> element */
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+  /* Required only for block elements like <li>'s */
+  width: 300px;
+  height: auto; }
+
+a.jcarousel-prev, a.jcarousel-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  z-index: 10; }
+  a.jcarousel-prev span, a.jcarousel-next span {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    display: inline-block;
+    text-align: center; }
+    a.jcarousel-prev span i, a.jcarousel-next span i {
+      color: #fff; }
+
+a.jcarousel-next {
+  left: 0;
+  right: auto; }
+
+.techvertu-industry-tabs {
+  font-size: 0;
+  border: 1px solid #008EAA;
+  border-radius: 0 15px 15px 15px;
+  overflow: hidden; }
+  .techvertu-industry-tabs .techvertu-industry-item {
+    display: inline-flex;
+    vertical-align: top;
+    width: 25%;
+    height: 178px;
+    border-bottom: 1px solid #A19EA6;
+    border-right: 1px solid #A19EA6;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .techvertu-industry-tabs .techvertu-industry-item:hover {
+      background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%); }
+      .techvertu-industry-tabs .techvertu-industry-item:hover h3 a {
+        color: #fff; }
+    .techvertu-industry-tabs .techvertu-industry-item:nth-child(4n) {
+      border-right: 0; }
+    .techvertu-industry-tabs .techvertu-industry-item:nth-child(13), .techvertu-industry-tabs .techvertu-industry-item:nth-child(14) {
+      height: auto;
+      width: 50%;
+      padding: 20px;
+      border-bottom: 0; }
+    .techvertu-industry-tabs .techvertu-industry-item:nth-child(14) {
+      border-right: 0; }
+    .techvertu-industry-tabs .techvertu-industry-item h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .techvertu-industry-tabs .techvertu-industry-item h3 a {
+        display: block;
+        color: #008EAA;
+        font-size: 24px;
+        font-weight: bold; }
+  .techvertu-industry-tabs .techvertu-industry-item.gray-class {
+    background-color: #F0F0F0; }
+    .techvertu-industry-tabs .techvertu-industry-item.gray-class:hover {
+      background-image: none; }
+      .techvertu-industry-tabs .techvertu-industry-item.gray-class:hover h3 a {
+        color: #008EAA; }
+
+.buy-button a {
+  border: 2px solid #ED6B06;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden; }
+  .buy-button a:hover {
+    background-color: #ED6B06; }
+  .buy-button a span.text {
+    font-size: 26px;
+    color: #fff;
+    padding: 17px 20px;
+    display: inline-block; }
+  .buy-button a span.icon-box-wrapper {
+    background-color: #ED6B06;
+    padding: 14px;
+    display: inline-block; }
+
+.techvertu-product-key-features li {
+  margin-top: 20px; }
+  .techvertu-product-key-features li a {
+    font-size: 20px;
+    line-height: 35px;
+    color: #000; }
+    .techvertu-product-key-features li a i {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #ED6B06;
+      display: inline-block;
+      text-align: center;
+      line-height: 32px; }
+
+.techvertu-news-wrapper .techvertu-news-header {
+  border-bottom: 1px solid #D8DADF;
+  margin: 40px 0; }
+  .techvertu-news-wrapper .techvertu-news-header ul li {
+    display: inline-block;
+    width: 17.7%; }
+    .techvertu-news-wrapper .techvertu-news-header ul li time {
+      text-align: right;
+      display: block;
+      font-size: 15px;
+      font-weight: 400; }
+    .techvertu-news-wrapper .techvertu-news-header ul li label {
+      font-size: 17px;
+      font-weight: bold; }
+    .techvertu-news-wrapper .techvertu-news-header ul li select {
+      border: 1px solid #CFCFCF;
+      padding: 2px 9px;
+      font-size: 14px;
+      border-radius: 5px;
+      width: 62%;
+      background-color: #fff; }
+    .techvertu-news-wrapper .techvertu-news-header ul li button[type='submit'] {
+      width: 100%;
+      background-color: #ED6B06;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border: 1px solid #ED6B06;
+      background-color: transparent;
+      background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+      border-radius: 10px;
+      color: #fff;
+      margin-top: 20px;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      width: 70%;
+      font-size: 15px;
+      padding: 8px; }
+      .techvertu-news-wrapper .techvertu-news-header ul li button[type='submit']:hover {
+        background-color: transparent;
+        color: #fafafa;
+        border: 1px solid #cde3f9;
+        box-shadow: 0px 5px 20px -10px #ED6B06;
+        transform: translateY(-5%); }
+.techvertu-news-wrapper .techvertu-item-news {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%;
+  margin-bottom: 30px; }
+  .techvertu-news-wrapper .techvertu-item-news a {
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s; }
+    .techvertu-news-wrapper .techvertu-item-news a:hover {
+      transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -webkit-transition: all 0.2s ease-in-out 0s; }
+      .techvertu-news-wrapper .techvertu-item-news a:hover .overlay-content {
+        background-color: rgba(237, 107, 6, 0.38);
+        background-image: none;
+        transition: all 0.2s ease-in-out 0s;
+        -moz-transition: all 0.2s ease-in-out 0s;
+        -o-transition: all 0.2s ease-in-out 0s;
+        -ms-transition: all 0.2s ease-in-out 0s;
+        -webkit-transition: all 0.2s ease-in-out 0s; }
+      .techvertu-news-wrapper .techvertu-item-news a:hover h3 {
+        color: #ED6B06; }
+  .techvertu-news-wrapper .techvertu-item-news:nth-child(3n) {
+    margin-right: 0; }
+.techvertu-news-wrapper .image-wrapper {
+  position: relative;
+  height: 212px;
+  overflow: hidden;
+  border-radius: 10px; }
+  .techvertu-news-wrapper .image-wrapper img {
+    display: block; }
+  .techvertu-news-wrapper .image-wrapper svg {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #008EAA; }
+  .techvertu-news-wrapper .image-wrapper .overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    top: 0;
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 46%, #ececec 85%);
+    background: -webkit-gradient(left top, left bottom, color-stop(46%, rgba(255, 255, 255, 0)), color-stop(85%, #ececec));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 46%, #ececec 85%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 46%, #ececec 85%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 46%, #ececec 85%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 46%, #ececec 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec', GradientType=0 ); }
+    .techvertu-news-wrapper .image-wrapper .overlay-content .post-meta-data {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      max-width: 90%;
+      margin: 0 auto; }
+      .techvertu-news-wrapper .image-wrapper .overlay-content .post-meta-data span.category {
+        float: right; }
+    .techvertu-news-wrapper .image-wrapper .overlay-content time, .techvertu-news-wrapper .image-wrapper .overlay-content span {
+      font-size: 15px;
+      color: #949494; }
+.techvertu-news-wrapper .techvertu-news-content {
+  margin-bottom: 10px; }
+  .techvertu-news-wrapper .techvertu-news-content h3 {
+    font-size: 24px;
+    color: #53575A;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 10px 0;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s; }
+  .techvertu-news-wrapper .techvertu-news-content p {
+    font-size: 18px;
+    font-weight: 100;
+    color: #53575A;
+    line-height: 32px; }
+.techvertu-news-wrapper a.read-more {
+  font-size: 18px;
+  color: #374957; }
+  .techvertu-news-wrapper a.read-more:hover {
+    color: #ED6B06; }
+  .techvertu-news-wrapper a.read-more i {
+    margin-top: 6px;
+    display: inline-block;
+    vertical-align: middle; }
+
+.styled-text-box-item {
+  width: 18.8%;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 1px 20px -10px #cecece;
+  margin-right: 1%;
+  margin-bottom: 14px;
+  display: inline-flex;
+  vertical-align: top;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s; }
+  .styled-text-box-item:hover {
+    box-shadow: 0px 0px 115px -20px #FFA15E;
+    background-color: #ED6B06;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s; }
+    .styled-text-box-item:hover h3 {
+      color: #fff; }
+  .styled-text-box-item:nth-child(5n) {
+    margin-right: 0; }
+  .styled-text-box-item a {
+    display: block;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .styled-text-box-item a h3 {
+      color: #008EAA;
+      font-size: 22px;
+      line-height: 24px;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      font-weight: 500;
+      text-transform: uppercase; }
+
+.techvertu-on-call-box {
+  background-color: #008EAA;
+  border-radius: 10px; }
+  .techvertu-on-call-box .contact-text {
+    padding: 30px 20px;
+    width: 49%; }
+    .techvertu-on-call-box .contact-text h4 {
+      color: #fff;
+      font-size: 31px;
+      font-weight: 300; }
+  .techvertu-on-call-box .contact-call {
+    padding: 30px 20px;
+    background-color: #ED6B06;
+    color: #fff;
+    font-size: 31px;
+    font-weight: bold;
+    position: relative;
+    width: 50.6%;
+    right: -1px;
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%); }
+    .techvertu-on-call-box .contact-call a {
+      color: #fff;
+      font-size: 31px;
+      display: block;
+      text-align: center;
+      font-weight: bold; }
+      .techvertu-on-call-box .contact-call a i {
+        margin-right: 10px;
+        vertical-align: middle; }
+
+.fileCounter {
+  display: block;
+  text-align: right;
+  display: block;
+  font-size: 17px;
+  font-weight: bold; }
+
+.techsheets.techvertu-news-wrapper .image-wrapper {
+  height: 140px; }
+.techsheets.techvertu-news-wrapper .techvertu-news-header ul li select {
+  width: 53%; }
+.techsheets.techvertu-news-wrapper .techvertu-news-content h3 {
+  font-size: 18px;
+  text-align: center;
+  height: 50px; }
+.techsheets.techvertu-news-wrapper .techvertu-item-news:nth-child(3n) {
+  margin-right: 2%; }
+.techsheets.techvertu-news-wrapper .techvertu-item-news:nth-child(4n) {
+  margin-right: 0; }
+
+a.download-techsheet {
+  background-color: #ED6B06;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  text-align: center; }
+
+.techsheets {
+  margin: 50px 0; }
+
+.nav-section {
+  box-shadow: 0 2px 3px #cecece; }
+  .nav-section .techvertu-navigate-to-section ul {
+    text-align: center; }
+    .nav-section .techvertu-navigate-to-section ul li {
+      display: inline-block;
+      margin: 0 60px; }
+      .nav-section .techvertu-navigate-to-section ul li a {
+        display: block;
+        font-family: changa;
+        font-size: 18px;
+        padding: 5px 10px;
+        color: #53575A;
+        border-bottom: 2px solid transparent; }
+      .nav-section .techvertu-navigate-to-section ul li a.active {
+        color: #008EAA;
+        border-bottom: 2px solid #008EAA; }
+
+.vacancy-item {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fafafa;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 1%;
+  width: 23.7%;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s; }
+  .vacancy-item:last-child {
+    margin-right: 0; }
+  .vacancy-item:hover {
+    box-shadow: 0px -1px 15px -1px #ED6B06;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s; }
+    .vacancy-item:hover figure.image-wrapper {
+      background-color: transparent;
+      background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+      transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -webkit-transition: all 0.2s ease-in-out 0s; }
+      .vacancy-item:hover figure.image-wrapper a h3 {
+        color: #fff; }
+  .vacancy-item .vacancy-content {
+    margin-top: 20px; }
+    .vacancy-item .vacancy-content ul li {
+      margin-bottom: 20px;
+      color: #374957;
+      list-style: none;
+      font-size: 17px; }
+      .vacancy-item .vacancy-content ul li:last-child {
+        margin-bottom: 0; }
+  .vacancy-item .image-wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    margin: 0 auto !important;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s; }
+    .vacancy-item .image-wrapper a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-align: center; }
+      .vacancy-item .image-wrapper a h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #53575A;
+        line-height: 24px; }
+  .vacancy-item .vacancy-footer {
+    text-align: center;
+    margin-top: 20px; }
+    .vacancy-item .vacancy-footer a.apply-btn {
+      border-radius: 6px;
+      color: #616263;
+      border: 0;
+      font-weight: 500;
+      padding: 12px 20px;
+      line-height: 24px;
+      font-size: 17px;
+      text-align: center;
+      border: 2px solid #616263;
+      cursor: pointer;
+      display: inline-block;
+      padding: 8px 20px; }
+      .vacancy-item .vacancy-footer a.apply-btn:hover {
+        background-color: transparent;
+        background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+        color: #fff;
+        border: 2px solid transparent; }
+
+.vacancy-item.linkedin {
+  background-color: #007EBB; }
+  .vacancy-item.linkedin h3, .vacancy-item.linkedin p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px; }
+  .vacancy-item.linkedin h3 {
+    font-size: 23px;
+    font-weight: bold;
+    max-width: 110px;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .vacancy-item.linkedin p {
+    margin-bottom: 29px; }
+  .vacancy-item.linkedin a.apply-btn {
+    border-color: #fff;
+    color: #fff; }
+  .vacancy-item.linkedin:hover figure.image-wrapper {
+    background-color: #fafafa;
+    background-image: none; }
+
+.no-item {
+  float: left;
+  width: 76%; }
+
+.techvertu-product-cats {
+  overflow: hidden;
+  position: relative; }
+  .techvertu-product-cats:before {
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/left-grad.png) repeat-y 0 center;
+    width: 110px;
+    position: absolute;
+    height: 100%;
+    z-index: 6; }
+  .techvertu-product-cats:after {
+    content: "";
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/right-grad.png) repeat-y right center;
+    width: 110px;
+    position: absolute;
+    height: 100%;
+    z-index: 6; }
+  .techvertu-product-cats .swiper-slide {
+    background-color: #fff;
+    margin-right: 30px;
+    border-radius: 10px;
+    height: 450px;
+    box-shadow: 0px 9px 15px -10px rgba(0, 0, 0, 0.1);
+    width: 212px; }
+    .techvertu-product-cats .swiper-slide h3 {
+      margin-bottom: 10px;
+      margin-top: 0; }
+      .techvertu-product-cats .swiper-slide h3 a {
+        font-size: 24px;
+        color: #008EAA;
+        line-height: 28px;
+        display: block;
+        font-weight: 500;
+        text-transform: capitalize; }
+    .techvertu-product-cats .swiper-slide p {
+      font-size: 16px;
+      color: #959697;
+      font-weight: 200;
+      line-height: 23px;
+      text-align: left; }
+    .techvertu-product-cats .swiper-slide figure img {
+      display: block; }
+  .techvertu-product-cats .swiper {
+    width: 100%;
+    height: 550px;
+    margin-right: 18px;
+    padding: 20px 0; }
+  .techvertu-product-cats .product-cat-item-content {
+    padding: 25px; }
+
+.swiper-button-prev, .swiper-button-next {
+  background-color: #008EAA;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  top: 95%; }
+
+.swiper-button-prev {
+  background-image: url("../images/left-arrow.svg");
+  left: 44%; }
+
+.swiper-button-next {
+  background-image: url("../images/right-arrow.svg");
+  right: 44%; }
+
+.techvertu-teams {
+  overflow: hidden; }
+  .techvertu-teams .swiper {
+    height: 350px;
+    margin-right: 18px;
+    padding: 20px 0; }
+  .techvertu-teams .swiper-slide {
+    padding: 15px; }
+    .techvertu-teams .swiper-slide .team-item-content h3 {
+      font-size: 23px;
+      font-weight: 500;
+      color: #53575A;
+      text-align: center; }
+    .techvertu-teams .swiper-slide .team-item-content p {
+      color: #008EAA;
+      font-size: 17px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 21px; }
+    .techvertu-teams .swiper-slide .team-item-content span {
+      font-weight: 400;
+      color: #949494;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      font-size: 15px; }
+    .techvertu-teams .swiper-slide .image-wrapper {
+      padding: 10px; }
+      .techvertu-teams .swiper-slide .image-wrapper img {
+        border-radius: 15px; }
+  .techvertu-teams .swiper-button-prev {
+    left: -50px;
+    top: 50%; }
+  .techvertu-teams .swiper-button-next {
+    right: -30px;
+    top: 50%; }
+
+.techvertu-swipper {
+  overflow: hidden; }
+  .techvertu-swipper .elementor-testimonial__content {
+    border: 3px solid #FF9854;
+    border-radius: 15px;
+    background-color: #fff; }
+    .techvertu-swipper .elementor-testimonial__content:after {
+      background: url("../images/arrow.svg") no-repeat;
+      width: 50px;
+      height: 13px;
+      z-index: 12;
+      transform: initial;
+      -webkit-transform: initial;
+      top: calc(100% - 0px) !important; }
+    .techvertu-swipper .elementor-testimonial__content:before {
+      background: url("../images/quote-right.svg") no-repeat;
+      position: absolute;
+      content: "";
+      width: 70px;
+      height: 50px;
+      top: -30px; }
+  .techvertu-swipper .elementor-testimonial__text {
+    font-family: changa;
+    font-weight: 400;
+    font-size: 17px;
+    color: #53575A;
+    font-style: normal;
+    line-height: 24px;
+    padding: 12px 6px 0; }
+  .techvertu-swipper .elementor-testimonial__name {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Changa'; }
+  .techvertu-swipper .elementor-testimonial__title {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Changa';
+    color: #545454;
+    letter-spacing: 1px; }
+  .techvertu-swipper .elementor-testimonial__image img {
+    border: 1px solid #ED6B06; }
+
+.managing-director .elementor-widget-image {
+  width: 70%; }
+.managing-director h2 {
+  font-family: changa;
+  font-size: 36px;
+  font-weight: bold; }
+.managing-director p {
+  font-weight: 200 !important;
+  font-size: 18px;
+  color: #53575A;
+  line-height: 23px; }
+.managing-director .elementor-widget:not(:last-child) {
+  margin-bottom: 5px; }
+.managing-director div.job-title {
+  font-weight: bold;
+  font-size: 21px; }
+
+#second-button span {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  color: #BCBCBC; }
+
+.ckick-here-btn #second-button span {
+  color: #fff; }
+.ckick-here-btn #second-button:hover {
+  background-color: #fff; }
+  .ckick-here-btn #second-button:hover span {
+    color: #ED6B06; }
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #000; }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: transparent;
+  background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+  border-color: #ED6B06; }
+
+/*# sourceMappingURL=style.css.map */

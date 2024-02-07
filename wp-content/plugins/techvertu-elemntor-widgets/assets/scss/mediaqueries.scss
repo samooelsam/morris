@@ -1,0 +1,16 @@
+$miniDesktop: 920px;
+$desktopmax: 1200px;
+$tablet: 780px;
+$mobile: 480px;
+@media only screen and (min-width: $desktopmax) and (max-width: 1500px) {
+}
+@media only screen and (min-width: $miniDesktop) and (max-width: $desktopmax) {
+}
+@media only screen and (max-width: $miniDesktop) {
+}
+@media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: $mobile) {
+}
+@media only screen and (max-width: 350px) {
+}

@@ -1,0 +1,82 @@
+.techvertu-product-cats{
+    overflow: hidden;
+    position: relative;
+    &:before{
+        content: "";
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: url(../images/left-grad.png) repeat-y 0 center;
+        width: 110px;
+        position: absolute;
+        height: 100%;
+        z-index: 6;
+    }
+    &:after{
+        content: "";
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: url(../images/right-grad.png) repeat-y right center;
+        width: 110px;
+        position: absolute;
+        height: 100%;
+        z-index: 6;
+    }
+    .swiper-slide{
+        background-color: #fff;
+        margin-right:30px;
+        border-radius: $borderRadiusLight;
+        height:450px;
+        box-shadow: 0px 9px 15px -10px rgba(0, 0, 0, 0.1);
+        width:212px;
+        h3{
+            margin-bottom: 10px;
+            margin-top:0;
+            a{
+                font-size:24px;
+                color:$AlternativeSpot;
+                line-height: 28px;
+                display: block;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+        }
+        p{
+            font-size: 16px;
+            color: #959697;
+            font-weight: 200;
+            line-height: 23px;
+            text-align: left;
+        }
+        figure{
+            img{
+                display: block;
+            }
+        }
+    }
+    .swiper {
+        width: 100%;
+        height: 550px;
+        margin-right: 18px;
+        padding:20px 0;
+      }  
+      .product-cat-item-content{
+        padding:25px;
+      } 
+}
+.swiper-button-prev, .swiper-button-next{
+    background-color: $AlternativeSpot;
+    width:50px;
+    height: 50px;
+    border-radius: $borderRadiusLight;
+    top:95%;
+}
+.swiper-button-prev{
+    background-image: url('../images/left-arrow.svg');
+    left:44%;
+}
+.swiper-button-next{
+    background-image: url('../images/right-arrow.svg');
+    right:44%;
+}

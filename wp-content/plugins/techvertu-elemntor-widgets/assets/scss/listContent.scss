@@ -1,0 +1,20 @@
+.techvertu-product-key-features{
+    li{
+        margin-top:20px;
+        a{
+            font-size:20px;
+            line-height:35px;
+            color:#000;
+           i{
+                width:30px;
+                height:30px;
+                border-radius: 50%;
+                border:1px solid $mainSpot;
+                display: inline-block;
+                text-align: center;
+                line-height: 32px;
+           }
+        }
+        
+    }
+}

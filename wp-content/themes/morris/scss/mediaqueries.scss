@@ -1,0 +1,499 @@
+/*
+-
+-
+-
+-
+- Morris theme - mobile view
+- Powered by : TechVertu;
+- Coded by: Saman Tohidian 
+- Version : 1.0
+- July 2023
+-
+-
+-
+-
+-
+*/
+$miniDesktop: 920px;
+$desktopmax: 1200px;
+$tablet: 780px;
+$mobile: 480px;
+@media only screen and (min-width: $desktopmax) and (max-width: 1500px) {
+}
+@media only screen and (min-width: $miniDesktop) and (max-width: $desktopmax) {
+    .main-nav-links {
+        ul {
+            li {
+                a{
+                    padding:30px 0px !important;
+                }
+            }
+        }
+    }
+    .more-info {
+        display: none;
+    }
+    .top-header{
+        .column{
+            width:100%;
+            &:first-child{
+                display: none;
+            }
+        }
+    }
+    .Form-wrapper{
+        padding:0 25px;
+    }
+}
+@media only screen and (max-width: $miniDesktop) {
+    .mobile-menu{
+        display: block;
+        i{
+            font-size: 30px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+      }
+      .elementor-background-overlay{
+        background-size: cover !important;
+      }
+      .main-nav-links {
+        ul {
+            > li.current-menu-item {
+                > a{
+                    &:before{
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+      }
+      html .woocommerce-pagination ul{
+        width:100%;
+      }
+      .caption-content{
+        display: none;
+      }
+      html .woocommerce-banner{
+        figcaption {
+            h3{
+                font-size:25px;
+            }
+        }
+      }
+      
+      .woocommerce-ordering {
+        p{
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        .view-tools {
+            ul{
+                li{
+                    label{
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+      }
+    .menu-main-header-container{
+        display: none;
+        position: fixed;
+        z-index: 10;
+        background-color: rgba(255,255,255,0.96);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding:100px 40px 100px 40px;
+        overflow-x: scroll;
+        ul{
+            li{
+                width:100%;
+                a{
+                    text-align: left;
+                    padding: 10px 0!important;
+                    font-size: 25px;
+                    i{
+                        float: right;
+                        font-size: 25px !important;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .close-mobile-menu{
+        display: block;
+    }
+    span.search-icn{
+        display: none;
+    }
+    span.shop-icn{
+        display: none;
+    }
+    .top-nav-links{
+        display: none;
+    }
+    .more-info {
+        display: none;
+    }
+    .down-header{
+        padding: 17px;
+        .centerize{
+            .grid_2{
+                width:33% !important;
+            }
+            .grid_10{
+                width:65% !important;
+            }
+        }
+    }
+    .qoat-wrapper{
+        padding:32px;
+    }
+    .brands-wrapper{
+        padding:0 32px;
+    }
+    .Form-wrapper{
+        .elementor-element-populated{
+            margin:20px 0 0 0 !important;
+        }
+    }
+    .ckick-here-btn{
+        width:100% !important;
+        a{
+            width: 100%;
+            span{
+                text-align: center;
+            }
+        }
+    }
+    .techvertu-industry-tabs {
+        .techvertu-industry-item{
+            height: 110px !important;
+            &:nth-child(14){
+                height: auto !important;
+            }
+            &:nth-child(13){
+                height: auto !important;
+            }
+            h3{
+                a{
+                    line-height: 20px;
+                    font-size: 19px !important;
+                }
+            }
+            .image-wrapper{
+                img{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+    .small-image-news{
+        .elementor-posts {
+            .elementor-post{
+                display: block;
+                .elementor-post__thumbnail{
+                    margin-bottom: 20px;
+                }
+                .elementor-post__text{
+                    h3{
+                        a{
+                            font-size:32px;
+                        }
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+                a.elementor-post__read-more{
+                    display: block;
+                }
+            }
+        }
+    }
+    .top-footer, .mobile-padding{
+        padding: 0 32px;
+    }
+    .footer-column{
+        width:100% !important;
+        iframe{
+            width: 100%;
+        }
+    }
+    .none-mobile{
+        display: none;
+    }
+    .down-footer {
+        .jfh-logo{
+            display: none;
+        }
+        .techvertu-licence{
+            width: 100%;
+            > a{
+                width:100%;
+                text-align: center;
+            }
+        }
+        p{
+            width:100% !important;
+        }
+    }
+    .main-big-news, .small-image-news {
+        padding: 0 32px;
+    }
+    .woocommerce-banner{
+        height:auto !important;
+    }
+    html .woocommerce-wrapper {
+        .right-column{
+            width:100% !important
+        }
+        .left-column{
+            width:100% !important;
+        }
+        .item-box--product-item{
+            width:47% !important;
+        }
+        .related-products{
+            .item-box--product-item{
+                width:47% !important;
+            }
+        }
+    }
+    .styled-text-box-item{
+        width:48% !important;
+    }
+    .techvertu-on-call-box {
+        .contact-text, .contact-call{
+            width: 100% !important;
+        }
+    }
+    .techvertu-news-wrapper {
+        .image-wrapper{
+            height: 162px !important;
+        }
+        .techvertu-news-header {
+            ul {
+                li{
+                    width:90% !important;
+                    select{
+                        width: 100% !important;
+                        margin-top: 10px;
+                    }
+                    label{
+                        text-align: left !important;
+                        display: block;
+                    }
+                    button[type='submit']{
+                        width:100% !important
+                    }
+                }
+            }
+        }
+        .techvertu-item-news{
+            width:47% !important;
+        }
+    }
+    .info-box {
+        .elementor-icon-box-description{
+            text-align: center;
+        }
+    }
+    .techvertu-counter {
+        .elementor-counter {
+            .elementor-counter-number-wrapper {
+                span{
+                    line-height: 80px;
+                }
+            }
+        }
+    }
+    html .techvertu-counter {
+        .elementor-counter-title{
+            width:100% !important;
+            text-align: center !important;
+            margin-left: 0;
+            display: inline-table;
+            line-height: 50px !important;
+            font-size: 40px !important;
+        }
+        .elementor-counter-number-wrapper{
+            width:100% !important;
+        }
+    }
+    .techvertu-our-promises {
+        .our-promise-item{
+            width:47% !important;
+        }
+    }
+    .main-nav-links {
+        ul {
+            li.product-menu {
+                ul.sub-menu{
+                    grid-template-columns: repeat(1, 1fr);
+                    
+                }
+                ul.sub-menu.block{
+                    display: block;
+                }
+            }
+        }
+    }
+    .main-nav-links ul li ul.sub-menu li{
+        display: block !important;
+    }
+    .menu-main-header-container {
+        ul.sub-menu {
+            position: static;
+            grid-template-columns: repeat(1, 1fr);
+            > li{
+                padding: 20px; 
+                display: block;
+                ul.sub-menu{
+                    position: static;
+                    li {
+                        a{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-nav-links {
+        ul {
+            li.industery-menu {
+                ul.sub-menu{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+    .menu-main-header-container ul.sub-menu > li ul.sub-menu li a{
+        text-align: center;
+    }
+    .main-nav-links ul li.industery-menu ul.sub-menu li{
+        padding:25px;
+    }
+    .banner-title-section{
+        h2{
+            font-size: 2.5em;
+        }
+    }
+    html .elementor-form-fields-wrapper{
+        .elementor-button{
+            width:100%;
+        }
+    }
+}
+@media only screen and (max-width: $tablet) {
+    .swiper-button-prev{
+        left: 34% !important;
+    }
+    .techvertu-teams {
+        .swiper-button-prev{
+            top:100% !important;
+        }
+        .swiper-button-next{
+            top:100% !important;
+            right:43% !important
+        }
+    }
+    .woocommerce-banner{
+        height:300px !important;
+        img{
+            width: inherit;
+            max-width: inherit;
+            height: 100%;
+        }
+        .techvertu-term-description {
+            p{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    .techvertu-product-cats{
+        .swiper-button-next{
+            right: 34%;
+        }
+    }
+    .footer-left-padding{
+        padding-left: 0;
+    }
+    html .techvertu-product-cats:before{
+        background: none;
+    }
+    html .techvertu-product-cats:after{
+        background: none;
+    }
+    html .info-box .elementor-icon-box-description{
+        text-align: center;
+    }
+    html .product-wrapper {
+        .product-top {
+            .image-wrapper{
+                width:100%;
+            }
+        }
+        .product-description{
+            width: 99%;
+            padding: 9px;
+            box-sizing: border-box;
+        }
+    }
+    
+    .techvertu-product-buttons {
+        a.main{
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        a.green{
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+    .spare-parts-styles{
+        b{
+            display: block;
+        }
+    }
+    .techvertu-no-product {
+        .image-wrapper, .techvertu-no-product-content {
+            width:100%;
+        }
+        .techvertu-no-product-content{
+            padding: 20px;
+            box-sizing: content-box;
+        }
+    }
+}
+@media only screen and (max-width: $mobile) {
+    .techvertu-product-cats {
+        .swiper-slide{
+            height: 500px !important;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        top:94%;
+    }
+    .techvertu-product-cats{
+        padding-bottom: 50px;
+    }
+    .techvertu-product-buttons {
+        a.orange{
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    
+    
+}

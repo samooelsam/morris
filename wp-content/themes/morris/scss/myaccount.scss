@@ -1,0 +1,38 @@
+.login-pic-column, .forgot-pass-wrapper{
+    display: inline-block;
+    vertical-align: middle;
+    p{
+        font-family: changa;
+        font-size:15px;
+        color:$semiBlack;
+    }
+}
+.forgot-pass-wrapper{
+    padding:20px;
+    box-sizing: border-box;
+    input[type="text"], input[type="password"]{
+        @include inputs;
+        font-size:15px;
+        color:$semiBlack;
+        font-family: changa;
+    }
+    button{
+        width:100%;
+        font-size:15px;
+        color:$semiBlack;
+        font-family: changa;
+        @include woocommerceButton;
+    }
+    .form-row{
+        width:100% !important;
+        label{
+            font-size: 15px;
+            font-family: changa;
+            font-weight: bold;
+        }
+    }
+}
+.woo-message-holder{
+    max-width: 1200px;
+    margin: 0 auto;
+}

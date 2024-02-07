@@ -1,0 +1,47 @@
+.fileCounter{
+    display: block;
+    text-align: right;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+}
+.techsheets.techvertu-news-wrapper{
+    .image-wrapper{
+        height: 140px;
+    }
+    .techvertu-news-header {
+        ul {
+            li {
+                select{
+                    width:53%;
+                }
+            }
+        }
+    }
+    .techvertu-news-content{
+        h3{
+            font-size:18px;
+            text-align: center;
+            height: 50px;
+        }
+    }
+    .techvertu-item-news{
+        &:nth-child(3n){
+            margin-right: 2%;
+        }
+        &:nth-child(4n){
+            margin-right: 0;
+        }
+    }
+}
+a.download-techsheet{
+    background-color: $mainSpot;
+    font-size:20px;
+    color:#fff;
+    border-radius: $borderRadiusLight;
+    display: block;
+    text-align: center;
+}
+.techsheets {
+    margin:50px 0;
+}

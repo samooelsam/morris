@@ -1,0 +1,102 @@
+.techvertu-swipper{
+    overflow: hidden;
+    .elementor-testimonial__content{
+        border:3px solid #FF9854;
+        border-radius: $borderRadiusStrong;
+        background-color: #fff;
+        &:after{
+            background: url('../images/arrow.svg') no-repeat;
+            width: 50px;
+            height: 13px;
+            z-index: 12;
+            transform: initial;
+            -webkit-transform: initial;
+            top:calc(100% - 0px) !important;
+        }
+        &:before{
+            background:url("../images/quote-right.svg") no-repeat;
+            position: absolute;
+            content:"";
+            width:70px;
+            height:50px;
+            top:-30px;
+        }
+    }
+    .elementor-testimonial__text{
+        font-family: changa;
+        font-weight: 400;
+        font-size: 17px;
+        color: #53575A;
+        font-style: normal;
+        line-height: 24px;
+        padding: 12px 6px 0;
+    }
+    .elementor-testimonial__name{
+        font-size: 21px;
+        font-weight: 500;
+        font-family: 'Changa';
+    }
+   .elementor-testimonial__title{
+        font-size: 15px;
+        font-weight: 200;
+        font-family: 'Changa';
+        color: #545454;
+        letter-spacing: 1px;
+   }
+   .elementor-testimonial__image {
+    img{
+        border:1px solid $mainSpot;
+    }
+   }
+}
+.managing-director{
+    .elementor-widget-image{
+        width:70%;
+    }
+    h2{
+        font-family: changa;
+        font-size:36px;
+        font-weight: bold;
+    }
+    p{
+        font-weight: 200 !important;
+        font-size: 18px;
+        color:$darkGray;
+        line-height: 23px;
+    }
+    .elementor-widget:not(:last-child){
+        margin-bottom: 5px;
+    }
+    div.job-title{
+        font-weight: bold;
+        font-size: 21px;
+    }
+}
+#second-button span{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    color:$LightGray;
+}
+.ckick-here-btn #second-button{
+    span{
+        color:#fff;
+    }
+    &:hover{
+        background-color: #fff;
+        span{
+            color:$mainSpot;
+        }
+    }
+}
+.swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border:1px solid #000;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    @include mainBackgroundGradient;
+    border-color: $mainSpot;
+}

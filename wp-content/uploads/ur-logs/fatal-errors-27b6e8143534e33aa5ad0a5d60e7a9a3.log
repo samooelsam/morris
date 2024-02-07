@@ -1,0 +1,749 @@
+2023-11-02T18:16:55+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-02T18:16:59+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-02T18:17:15+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-02T18:17:37+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-02T18:22:32+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T00:04:12+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T00:04:19+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T00:04:40+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T00:04:46+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T00:04:57+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T12:34:19+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T19:58:02+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-03T20:45:16+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-04T06:31:59+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-04T12:33:07+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-04T20:03:15+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-05T08:41:33+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-05T12:33:32+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-05T18:33:22+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-05T19:59:20+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-06T10:42:29+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-06T12:33:37+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-06T18:33:26+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(787): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(720): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:55:57+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:55:59+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:56:05+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:56:26+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:56:28+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:56:35+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:57:03+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T13:59:41+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T15:02:18+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T15:02:47+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-13T15:03:05+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-15T08:52:43+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-15T10:05:03+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-15T10:05:30+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-15T10:13:42+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:128
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/taxDescription.php(7): techvertu_description_template()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(725): load_template()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/general-template.php(206): locate_template()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(23): get_template_part()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 128
+
+2023-11-16T14:53:47+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/config.php on line 106
+
+2023-11-16T14:53:48+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/config.php on line 106
+
+2023-11-16T14:54:48+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 164
+
+2023-11-16T14:54:49+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 164
+
+2023-11-19T14:34:36+00:00 CRITICAL Uncaught ArgumentCountError: substr() expects at most 3 arguments, 4 given in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:180
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php(180): substr()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): techvertu_shorten_woo_product_title()
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/post-template.php(174): apply_filters()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1171): get_the_title()
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): woocommerce_template_loop_product_title()
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/content-product.php(52): do_action()
+#9 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template.php(792): require('...')
+#10 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#11 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1000): wc_get_template_part()
+#12 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce.php(68): woocommerce_content()
+#13 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(106): include('...')
+#14 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#15 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#16 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 180
+
+2023-11-29T10:42:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function techvertu_renaming_shipping_order_item_totals(), 1 passed in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:198
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(326): techvertu_renaming_shipping_order_item_totals()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(2316): apply_filters()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/email-order-details.php(62): WC_Order->get_order_item_totals()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(421): wc_get_template()
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails->order_details()
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/admin-new-order.php(37): do_action()
+#10 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#11 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(364): wc_get_template()
+#12 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(134): wc_get_template_html()
+#13 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(588): WC_Email_New_Order->get_content_html()
+#14 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(111): WC_Email->get_content()
+#15 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Email_New_Order->trigger()
+#16 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#17 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(565): WP_Hook->do_action()
+#18 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(170): do_action_ref_array()
+#19 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails::send_transactional_email()
+#20 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#21 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#22 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(404): do_action()
+#23 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(253): WC_Order->status_transition()
+#24 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(365): WC_Order->save()
+#25 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/gateways/cod/class-wc-gateway-cod.php(348): WC_Order->update_status()
+#26 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1055): WC_Gateway_COD->process_payment()
+#27 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1284): WC_Checkout->process_order_payment()
+#28 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(508): WC_Checkout->process_checkout()
+#29 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::checkout()
+#30 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#31 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#32 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#33 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::do_wc_ajax()
+#34 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#35 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#36 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(13): do_action()
+#37 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#38 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#39 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 198
+
+2023-11-29T10:42:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function techvertu_renaming_shipping_order_item_totals(), 1 passed in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php on line 326 and exactly 3 expected in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:198
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(326): techvertu_renaming_shipping_order_item_totals()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(2316): apply_filters()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/email-order-details.php(62): WC_Order->get_order_item_totals()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(421): wc_get_template()
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails->order_details()
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/admin-new-order.php(37): do_action()
+#10 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#11 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(364): wc_get_template()
+#12 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(134): wc_get_template_html()
+#13 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(588): WC_Email_New_Order->get_content_html()
+#14 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(111): WC_Email->get_content()
+#15 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Email_New_Order->trigger()
+#16 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#17 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(565): WP_Hook->do_action()
+#18 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(170): do_action_ref_array()
+#19 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails::send_transactional_email()
+#20 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#21 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#22 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(404): do_action()
+#23 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(253): WC_Order->status_transition()
+#24 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(365): WC_Order->save()
+#25 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/gateways/cod/class-wc-gateway-cod.php(348): WC_Order->update_status()
+#26 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1055): WC_Gateway_COD->process_payment()
+#27 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1284): WC_Checkout->process_order_payment()
+#28 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(508): WC_Checkout->process_checkout()
+#29 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::checkout()
+#30 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#31 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#32 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#33 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::do_wc_ajax()
+#34 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#35 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#36 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(13): do_action()
+#37 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#38 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#39 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 198
+
+2023-11-29T11:47:49+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on null in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:210
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): techvertu_set_priority_to_total_count_in_order()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(2316): apply_filters()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/email-order-details.php(62): WC_Order->get_order_item_totals()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(421): wc_get_template()
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails->order_details()
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/admin-new-order.php(37): do_action()
+#10 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#11 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(364): wc_get_template()
+#12 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(134): wc_get_template_html()
+#13 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(588): WC_Email_New_Order->get_content_html()
+#14 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(111): WC_Email->get_content()
+#15 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Email_New_Order->trigger()
+#16 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#17 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(565): WP_Hook->do_action()
+#18 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(170): do_action_ref_array()
+#19 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails::send_transactional_email()
+#20 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#21 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#22 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(404): do_action()
+#23 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(253): WC_Order->status_transition()
+#24 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(365): WC_Order->save()
+#25 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/gateways/cod/class-wc-gateway-cod.php(348): WC_Order->update_status()
+#26 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1055): WC_Gateway_COD->process_payment()
+#27 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1284): WC_Checkout->process_order_payment()
+#28 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(508): WC_Checkout->process_checkout()
+#29 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::checkout()
+#30 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#31 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#32 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#33 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::do_wc_ajax()
+#34 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#35 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#36 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(13): do_action()
+#37 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#38 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#39 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 210
+
+2023-11-29T11:48:39+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on null in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:210
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): techvertu_set_priority_to_total_count_in_order()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(2316): apply_filters()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/email-order-details.php(62): WC_Order->get_order_item_totals()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(421): wc_get_template()
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails->order_details()
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/admin-new-order.php(37): do_action()
+#10 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#11 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(364): wc_get_template()
+#12 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(134): wc_get_template_html()
+#13 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(588): WC_Email_New_Order->get_content_html()
+#14 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(111): WC_Email->get_content()
+#15 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Email_New_Order->trigger()
+#16 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#17 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(565): WP_Hook->do_action()
+#18 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(170): do_action_ref_array()
+#19 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails::send_transactional_email()
+#20 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#21 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#22 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(404): do_action()
+#23 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(253): WC_Order->status_transition()
+#24 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(365): WC_Order->save()
+#25 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/gateways/cod/class-wc-gateway-cod.php(348): WC_Order->update_status()
+#26 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1055): WC_Gateway_COD->process_payment()
+#27 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1284): WC_Checkout->process_order_payment()
+#28 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(508): WC_Checkout->process_checkout()
+#29 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::checkout()
+#30 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#31 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#32 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#33 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::do_wc_ajax()
+#34 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#35 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#36 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(13): do_action()
+#37 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#38 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#39 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 210
+
+2023-11-29T11:50:57+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on null in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:210
+Stack trace:
+#0 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): techvertu_set_priority_to_total_count_in_order()
+#1 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(2316): apply_filters()
+#3 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/email-order-details.php(62): WC_Order->get_order_item_totals()
+#4 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(421): wc_get_template()
+#6 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails->order_details()
+#7 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/woocommerce/emails/admin-new-order.php(37): do_action()
+#10 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#11 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(364): wc_get_template()
+#12 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(134): wc_get_template_html()
+#13 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(588): WC_Email_New_Order->get_content_html()
+#14 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(111): WC_Email->get_content()
+#15 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Email_New_Order->trigger()
+#16 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#17 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(565): WP_Hook->do_action()
+#18 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-emails.php(170): do_action_ref_array()
+#19 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_Emails::send_transactional_email()
+#20 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#21 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#22 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(404): do_action()
+#23 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(253): WC_Order->status_transition()
+#24 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-order.php(365): WC_Order->save()
+#25 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/gateways/cod/class-wc-gateway-cod.php(348): WC_Order->update_status()
+#26 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1055): WC_Gateway_COD->process_payment()
+#27 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1284): WC_Checkout->process_order_payment()
+#28 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(508): WC_Checkout->process_checkout()
+#29 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::checkout()
+#30 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#31 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#32 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#33 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(324): WC_AJAX::do_wc_ajax()
+#34 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#35 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/plugin.php(517): WP_Hook->do_action()
+#36 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-includes/template-loader.php(13): do_action()
+#37 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-blog-header.php(19): require_once('...')
+#38 /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/index.php(17): require('...')
+#39 {main}
+  thrown in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php on line 210
+
+2023-11-29T13:35:32+00:00 CRITICAL Cannot redeclare techvertu_renaming_shipping_order_item_totals() (previously declared in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:198) in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/config.php on line 123
+
+2023-11-29T13:35:35+00:00 CRITICAL Cannot redeclare techvertu_renaming_shipping_order_item_totals() (previously declared in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:198) in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/config.php on line 123
+
+2023-11-29T13:35:36+00:00 CRITICAL Cannot redeclare techvertu_renaming_shipping_order_item_totals() (previously declared in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/functions.php:198) in /var/www/vhosts/dev.morrismachinery.co.uk/httpdocs/wp-content/themes/morris/includes/config.php on line 123
+

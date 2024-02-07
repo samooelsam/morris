@@ -1,0 +1,35 @@
+.team-members{
+    .elementor-image-box-content{
+        p{
+            text-align: center;
+        }
+    }
+    
+}
+
+.techvertu-counter{
+    .elementor-counter {
+        .elementor-counter-number-wrapper{
+            float:left;
+            width: 50%;
+            span{
+                font-size:88px;
+                font-weight: bold;
+                color:$AlternativeSpot;
+            }
+        }
+        
+    }
+    .elementor-counter-title{
+        float: left;
+        width: 42%;
+        margin-top: -10px;
+        font-size: 21px !important;
+        line-height: 20px !important;
+        text-align: right !important;
+        margin-left: 20px;
+        &:first-line{
+            font-size:16px !important;
+        }
+    }
+}

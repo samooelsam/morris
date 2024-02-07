@@ -1,0 +1,102 @@
+.info-box{
+    .elementor-icon-box-title{
+        span{            
+            font-family: changa;
+            font-size:22px;
+            color:$darkGray;
+            font-weight: bold;
+        }
+    }
+    .elementor-icon-box-description{
+        font-family: changa !important;
+        font-size: 19px;
+        color: #53575A !important;
+        text-align: left;
+        line-height: 26px;
+        padding-top: 10px;
+    }
+}
+.techvertu-enquiry-form-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    h3{
+        font-size:30px;
+        color:$mainSpot;
+    }
+    
+}
+.techvertu-product-info-wrapper{
+    border-bottom: 1px dashed #DBDBDB;
+}
+.techvertu-enquiry-form{
+    .alert.green{
+        background-color:$greenAlert;
+        color:#fff;
+    }
+    .alert{
+        background-color: $alert;
+        color:#fff;
+        font-size: 15px;
+        padding:15px;
+        box-sizing: border-box;
+        border-radius: $borderRadiusLight;
+        margin-bottom: 20px;
+    }
+    .form-column{
+        display: inline-block;
+        input, textarea{
+            width:100%;
+            @include inputs;
+            box-sizing: border-box;
+            padding:10px;
+        }
+    }
+    .form-column.grid_6{
+        input{
+            width:96%;
+        }
+    }
+    input.contact-submit{
+        @include woocommerceButton;
+        width:100%;
+        cursor: pointer;
+    }
+    .form-sender {
+        span{
+            display: block;
+            font-size:23px;
+        }
+        span.sku-changer{
+            color:$darkGray;
+            font-size: 14px;
+            font-weight: 100;
+            margin: 10px 0;
+        }
+    }
+}
+.product-image-wrapper{
+    display: inline-block;
+    vertical-align: top;
+}
+.link-products{
+    a{
+        padding:6px;
+        display: flex;
+        font-size: 15px;
+        line-height: 40px;
+        color:$midGray;
+        
+        i{
+            background-color: #F0F3FA;
+            color:$midGray;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+    }
+}

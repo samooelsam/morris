@@ -1,0 +1,120 @@
+/*
+-
+-
+-
+-
+- Morris Theme
+- Powered by : techvertu.co.uk;
+- Coded by: Saman Tohidian 
+- Version : 1.0
+- July 2023
+-
+-
+-
+-
+====================Sass parameters===================*/
+
+$rightText: right;
+$AlternativeSpot: #008EAA;
+$LightGray: #BCBCBC;
+$mainSpot: #ED6B06;
+$semiGray: #373737;
+$semiGrayLight:#616263;
+$socketColor: #051926;
+$AlternativeSpotGreen:#004451;
+$borderRadiusLight:10px;
+$borderRadiusStrong:15px;
+$borderRadiusLighter: 5px;
+$grayStorke: #D8DADF;
+$semiBlack:#374957;
+$darkGray:#53575A;
+$alert: #EA6464;
+$greenAlert:#76AB33;
+$midGray:#949494;
+$menuColor:#54585A;
+@mixin transition() {
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+}
+@mixin inputs() {
+    background-color: #ffffff !important;
+    border:1px solid #393939;
+    border-radius: $borderRadiusLight !important;
+    font-size: 17px;
+    font-weight: 400 !important;
+    width:100%;
+    min-height: 47px !important;
+    color:#AFB5C6 !important
+}
+@mixin button() {
+    background: #FF4340;
+    border-radius: 6px;
+    color:#fff;
+    border:0;
+    font-weight: 500;
+    padding: 12px 20px; 
+    line-height: 24px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    @include transition;
+    &:hover{
+        background-color: transparent;
+        color:#fafafa;
+        border:1px solid #cde3f9;
+        box-shadow: 0px 5px 20px -10px #ED6B06;
+        transform: translateY(-5%);
+    }
+}
+@mixin buttonBorderd {
+    border-radius: 6px;
+    color:$semiGrayLight;
+    border:0;
+    font-weight: 500;
+    padding: 12px 20px; 
+    line-height: 24px;
+    font-size: 17px;
+    text-align: center;
+    border:2px solid $semiGrayLight;
+    cursor: pointer;
+}
+@mixin mainBackgroundGradient {
+    background-color: transparent;
+    background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+}
+@mixin mainBackgroundLighGradient {
+    background-color: transparent;
+    background-image: linear-gradient(338deg, #ED6B06 5%, rgba(255, 152, 84, 0.7) 64%);
+}
+@mixin metaStyle{
+    color:$darkGray;
+    border:1px solid $darkGray;
+    padding: 5px;
+    border-radius: $borderRadiusLighter;
+    font-size:8px;
+    &:hover{
+        border-color:$mainSpot;
+        color:$mainSpot;
+    }
+}
+@mixin woocommerceButton{
+    background-color: $mainSpot !important;
+    border-radius: $borderRadiusLight !important;
+    font-family: "Changa", Sans-serif !important;
+    font-weight: 500 !important;
+    padding:12px 24px !important;
+    color:#fff !important;
+}
+@import "fonts";
+@import "reset";
+@import "body";
+@import "mediaqueries";
+@import "woocommerce";
+@import "login";
+@import "registration";
+@import "myaccount";
+@import "inquiryPage";
+@import "teamMembers";

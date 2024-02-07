@@ -1,0 +1,28 @@
+.elementor-login {
+    button[type="submit"]{
+        width:100%;
+        cursor: pointer;
+        span{
+            font-size:20px;
+            text-transform: uppercase;
+        }
+    }
+}
+a.elementor-lost-password{
+    position: relative;
+    top: -116px;
+    left: 268px;
+    font-size:15px !important;
+    color:$semiBlack;
+}
+.Custom-register-link{
+    a{
+        font-size:16px;
+        color:#000;
+        font-weight: bold;
+    }
+    
+}
+.elementor-login__logged-in-message{
+    text-align: center;
+}

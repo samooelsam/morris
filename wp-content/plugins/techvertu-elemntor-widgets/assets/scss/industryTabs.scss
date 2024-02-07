@@ -1,0 +1,60 @@
+.techvertu-industry-tabs{
+    font-size:0;
+    border:1px solid $AlternativeSpot;
+    border-radius: 0 $borderRadiusStrong $borderRadiusStrong $borderRadiusStrong;
+    overflow: hidden;
+    .techvertu-industry-item{
+        display: inline-flex;
+        vertical-align: top;
+        width:25%;
+        height: 178px;
+        border-bottom:1px solid #A19EA6;
+        border-right:1px solid #A19EA6;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &:hover{
+            background-image:linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+            h3{
+                a{
+                    color:#fff;
+                }
+            }
+        }
+        &:nth-child(4n){
+            border-right:0;
+        }
+        &:nth-child(13), &:nth-child(14){
+            height: auto;
+            width: 50%;
+            padding: 20px;
+            border-bottom: 0;
+        }
+        &:nth-child(14){
+            border-right:0;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                display: block;
+                color:$AlternativeSpot;
+                font-size:24px;
+                font-weight: bold;
+            }
+        }
+    }
+    .techvertu-industry-item.gray-class{
+        background-color: #F0F0F0;
+        &:hover{
+            background-image: none;
+            h3{
+                a{
+                    color:$AlternativeSpot;
+                }
+            }
+        }
+    }
+}

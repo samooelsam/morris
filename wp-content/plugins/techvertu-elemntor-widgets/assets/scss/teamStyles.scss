@@ -1,0 +1,49 @@
+.techvertu-teams{
+    overflow: hidden;
+    .swiper {
+        height: 350px;
+        margin-right: 18px;
+        padding:20px 0;
+      }
+    .swiper-slide  {
+        padding:15px;
+        .team-item-content{
+            h3{
+                font-size:23px;
+                font-weight: 500;
+                color:$darkGray;
+                text-align: center;
+            }
+            p{
+                color:$AlternativeSpot;
+                font-size: 17px;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 400;
+                line-height: 21px;
+            }
+            span{
+                font-weight: 400;
+                color:$midGray;
+                font-weight: bold;
+                text-align: center;
+                display: block;
+                font-size:15px;
+            }
+        }
+        .image-wrapper{
+            padding:10px;
+            img{
+                border-radius: $borderRadiusStrong;
+            }
+        }
+    }
+    .swiper-button-prev{
+        left:-50px;
+        top:50%;
+    }
+    .swiper-button-next{
+        right:-30px;
+        top:50%;
+    }
+}

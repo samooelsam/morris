@@ -1,0 +1,145 @@
+.filters-wrapper{
+    border:1px solid $AlternativeSpot;
+    border-radius:0 $borderRadiusStrong $borderRadiusStrong $borderRadiusStrong;
+    padding: 36px 44px;
+    box-sizing: border-box;
+    h3{
+        color:$AlternativeSpot;
+        font-size: 32px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 20px;
+    }
+    h4{
+        color:$mainSpot;
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 18px;
+        line-height: 21px;
+        margin: 34px 0;
+        font-family: 'changa';
+        color:$darkGray;
+        font-weight: lighter;
+    }
+}
+.techvertu-filter-holder{
+    margin-bottom: 40px;
+}
+.techvertu-filter-wrapper{
+    label{
+        font-size:18px;
+        margin-bottom: 15px;
+        display: block;
+        margin-top: 11px;
+        display: inline-block;
+        width: 30%;
+        svg{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    input[type="text"]{
+        width:67%;
+        display: inline-block;
+    }
+    ul{
+        li{
+            display: inline-block;
+            width: 46%;
+            text-align: center;
+            margin-right: 3%;
+            margin-left: 0;
+            input{
+                display: none;
+            }
+            a{
+                border:1px solid $semiGray;
+                display: block;
+                border-radius: $borderRadiusLight;
+                padding:1px;
+                color:$darkGray;
+                font-weight: 400;
+                font-size:17px;
+                &:hover{
+                    background-color: $AlternativeSpot;
+                    color:#fff;
+                    border-color:#fff;
+                }
+            }
+        }
+    }
+}
+.techvertu-filter-wrapper{
+    margin-top:27px;
+    select, input[type="text"], input[type="number"]{
+        width:67%;
+        padding:3px;
+        border-radius: $borderRadiusLight;
+        border:1px solid $semiGray;
+        font-size: 17px;
+        padding-left: 15px;
+        &::placeholder{
+            color:#cecece;
+        }
+    }
+    input[type="submit"]{
+        @include button;
+    }
+    
+}
+
+html .techvertu-filter-wrapper.filter-box-result{
+    label{
+        color:$AlternativeSpot;
+    }
+    input{
+        border-color: $AlternativeSpot;
+        border-width: 2px;
+        background-color: rgba(0, 142, 170, 0.1);
+        color:$AlternativeSpot;
+        font-weight: bold;
+    }
+}
+.techvertu-tab-container{
+    ul{
+        li{
+            display: inline-block;
+            margin-bottom: 0;
+            margin-left:0;
+            a{
+                display: block;
+                background-color: #D9D9D9;
+                color:#999999;
+                font-size: 22px;
+                padding:4px 20px;
+                border-radius: $borderRadiusStrong $borderRadiusStrong 0 0;
+                position: relative;
+                text-transform: uppercase;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    right: -18px;
+                    border-right: 9px solid transparent;
+                    border-bottom: 16px solid #d9d9d9;
+                    border-left: 11px solid #d9d9d9;
+                    border-top: 23px solid transparent;
+                    bottom: 0;
+                }
+            }
+        }
+        li.active{
+            a{
+                background-color: $AlternativeSpot;
+                z-index: 10;
+                color:#fff;
+                &:before{
+                    border-bottom-color:$AlternativeSpot;
+                    border-left-color:$AlternativeSpot;
+                }
+            }
+        }
+    }
+}
