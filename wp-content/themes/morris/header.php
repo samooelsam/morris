@@ -102,7 +102,8 @@
                     <div class="left-menu-holder clearfix">
                         <nav class="main-nav-links inline-nav clearfix">
                             <span class="mobile-menu">
-                                <i class="fi fi-rr-menu-burger"></i>
+                                <i class="fi fi-rr-menu-burger menu-click"></i>
+                                <i class="top-menu"></i>
                             </span>
                             
                             <?php wp_nav_menu( array('theme_location' => 'topnav'));?>

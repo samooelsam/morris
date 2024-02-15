@@ -23,6 +23,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="column grid_3 footer-column footer-left-padding">
                 <h3><?php _e('More information', 'morris');?></h3>
                 <div class="links clearfix">
@@ -42,7 +43,7 @@
             <div class="column grid_3 footer-column">
                  <h3>Keep in touch</h3>
                 <div class="intouch clearfix">
-                    <p><a href="https://dev.morrismachinery.co.uk/contact">Contact</a></p>
+                    <p><a href="https://morrismachinery.co.uk/contact">Contact</a></p>
                 <?php   $tel = get_option('company_tel');
                         $email = get_option('company_email');
                         $address = get_option('company_address');  
@@ -90,7 +91,7 @@
                         </a>
                     </li>
                 </ul>
-                <a rel="nofollow" target="_blank" href="https://techvertu.co.uk">Web and IT Support - Techvertu</a>
+                <span>Web and IT Support - <a rel="nofollow" target="_blank" href="https://techvertu.co.uk">TechVertu</a></span>
             </div>
         </div>
     </div>

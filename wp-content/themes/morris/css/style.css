@@ -38,6 +38,9 @@ span, p {
   font: 12px/23px Changa,calibri;
   text-align: justify; }
 
+p {
+  margin-bottom: 7px; }
+
 ins {
   text-decoration: none; }
 
@@ -239,6 +242,8 @@ video {
         margin-left: 5px;
         vertical-align: middle;
         font-size: 16px; }
+    .main-nav-links ul li i.fi.nav-opener {
+      display: none; }
     .main-nav-links ul li.product-menu ul.sub-menu {
       grid-template-columns: repeat(6, 1fr); }
       .main-nav-links ul li.product-menu ul.sub-menu li {
@@ -342,13 +347,14 @@ span.search-icn {
     display: inline-block;
     width: 30%;
     vertical-align: top; }
-  .down-footer .techvertu-licence a {
+  .down-footer .techvertu-licence span, .down-footer .techvertu-licence a {
     text-align: right;
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
     color: #C9C9C9;
-    line-height: 30px;
+    line-height: 30px; }
+  .down-footer .techvertu-licence span {
     padding: 11px 0; }
   .down-footer .jfh-logo {
     text-align: left;
@@ -432,6 +438,16 @@ span.search-icn {
   font-size: 18px;
   font-weight: normal;
   color: #fff; }
+.intouch a {
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  text-decoration: underline;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 3px; }
+  .intouch a:hover {
+    color: #ED6B06; }
 
 .top-footer {
   border-top: 11px solid #ED6B06; }
@@ -499,6 +515,8 @@ html .banner-main {
     text-align: center;
     font-size: 18px;
     color: #53575A; }
+.our-brand-heading h3 {
+  font-size: 35px; }
 
 .our-brand-heading.no-margin h2, .our-brand-heading.no-margin h3 {
   margin: 0; }
@@ -1297,6 +1315,13 @@ a.back-to-home {
 .mobile-menu {
   display: none; }
 
+i.top-menu {
+  background: url("../img/more.png") no-repeat center center;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle; }
+
 .close-mobile-menu {
   display: none;
   font-size: 32px; }
@@ -1348,14 +1373,6 @@ html .field-privacy_policy label, html .field-privacy_policy .description {
   display: inline-block !important; }
 html .field-privacy_policy .description a {
   font-size: 14px; }
-
-.intouch a {
-  font-size: 18px;
-  font-weight: normal;
-  color: #fff;
-  text-decoration: underline; }
-  .intouch a:hover {
-    color: #ED6B06; }
 
 .elementor-widget-container table tr td, .elementor-widget-container table th td {
   font-family: "Changa", Sans-serif;
@@ -1440,6 +1457,10 @@ html .field-privacy_policy .description a {
   background-size: cover;
   padding-top: 90px;
   background-position: center center; }
+
+.elementor-widget-container table tr td, .elementor-widget-container table th td {
+  border: 1px solid #ebebeb;
+  padding: 14px; }
 
 /*
 -
@@ -1543,6 +1564,19 @@ html .field-privacy_policy .description a {
       width: 33% !important; }
     .down-header .centerize .grid_10 {
       width: 65% !important; }
+
+  .top-nav-links {
+    padding: 10px;
+    box-sizing: border-box; }
+    .top-nav-links ul {
+      width: 100%; }
+      .top-nav-links ul li {
+        display: inline-block;
+        width: 100%;
+        text-align: left; }
+
+  .top-header .grid_6 {
+    width: 100%; }
 
   .qoat-wrapper {
     padding: 32px; }
@@ -1749,7 +1783,26 @@ html .field-privacy_policy .description a {
     width: 100%; }
   .techvertu-no-product .techvertu-no-product-content {
     padding: 20px;
-    box-sizing: content-box; } }
+    box-sizing: content-box; }
+
+  .main-nav-links .menu-main-header-container ul li a i {
+    height: 25px;
+    position: relative;
+    z-index: 100000; }
+
+  .main-nav-links .menu-main-header-container ul li {
+    position: relative; }
+    .main-nav-links .menu-main-header-container ul li i.nav-opener {
+      position: absolute;
+      top: 20px;
+      font-size: 23px;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      z-index: 2;
+      display: block; }
+    .main-nav-links .menu-main-header-container ul li i.desktop-icn {
+      display: none; } }
 @media only screen and (max-width: 480px) {
   .techvertu-product-cats .swiper-slide {
     height: 500px !important; }

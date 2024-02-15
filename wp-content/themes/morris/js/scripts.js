@@ -1,6 +1,8 @@
 jQuery(document).ready(function(){
-    jQuery('.main-nav-links div > ul > li.menu-item-has-children > a').append('<i class="fi fi-rr-angle-small-down"></i>');
+    
     jQuery('.top-nav-links div > ul > li.menu-item-has-children > a').append('<i class="fi fi-rr-angle-small-down"></i>');
+    jQuery('.main-nav-links div > ul > li.menu-item-has-children').prepend('<i class="nav-opener fi fi-rr-angle-small-down"></i>');
+    jQuery('.main-nav-links div > ul > li.menu-item-has-children > a').append('<i class="desktop-icn fi fi-rr-angle-small-down"></i>');
     jQuery('.menu-main-header-container').prepend('<i class="close-mobile-menu fi fi-rr-circle-xmark"></i>');
     jQuery('.shop-icn').click(function(){
         jQuery('.mencart-wrapper').toggleClass('block');
@@ -25,11 +27,16 @@ jQuery(document).ready(function(){
         jQuery(this).find('i').toggleClass('fi-rr-angle-small-up');
         jQuery(this).next().toggleClass('none');
     });
-    jQuery('.woocommerce.filters .widget h2').each(function(){
+    jQuery('.woocommerce.filters .widget h2').each(function(event){
         jQuery(this).next().addClass('none');
+        // event.stopPropagation();
+    });
+    jQuery('.top-menu').click(function(){
+        jQuery('.top-nav-links').toggle('slow');
     });
     if(jQuery(window).width() >= 720){
 		//Update Header Style and Scroll to Top
+        
 		jQuery(window).on('scroll', function() {
 			if(jQuery('.techvertu-navigate-to-section').length){
 				var windowpos = jQuery(window).scrollTop();
@@ -65,23 +72,25 @@ jQuery(document).ready(function(){
                     This.find('> ul.sub-menu').removeClass('block');
                 }
                 if(jQuery('.blur-overlay').hasClass('block') && !jQuery('.mencart-wrapper').hasClass('block')){
-    
                     jQuery('.blur-overlay').removeClass('block');
                 }
             } 
         });
 	} else if (jQuery(window).width() <= 720){
-        jQuery('.main-nav-links ul > li.menu-item-has-children').on('click', function(event){
-                if(jQuery(this).find('> div.sub-menu-wrapper').length > 0 && !jQuery(this).find('> div.sub-menu-wrapper').hasClass('block')){
-                    jQuery(this).find('> div.sub-menu-wrapper').addClass('block');
+        
+        jQuery('.main-nav-links div > ul > li.menu-item-has-children > a i.nav-opener').remove();
+        jQuery('.main-nav-links ul > li.menu-item-has-children i.nav-opener').on('click', function(event){
+                if(jQuery(this).parent().find('> div.sub-menu-wrapper').length > 0 && !jQuery(this).find('> div.sub-menu-wrapper').hasClass('block')){
+                    jQuery(this).parent().find('> div.sub-menu-wrapper').addClass('block');
                 }
-                else if(jQuery(this).find('> ul.sub-menu').length > 0 && !jQuery(this).find('> ul.sub-menu').hasClass('block')){
-                    jQuery(this).find('> ul.sub-menu').addClass('block');
+                else if(jQuery(this).parent().find('> ul.sub-menu').length > 0 && !jQuery(this).parent().find('> ul.sub-menu').hasClass('block')){
+                    jQuery(this).parent().find('> ul.sub-menu').addClass('block');
                 }
                 else{
-                    jQuery(this).find('> div.sub-menu-wrapper').removeClass('block');
-                    jQuery(this).find('> ul.sub-menu').removeClass('block');
+                    jQuery(this).parent().find('> div.sub-menu-wrapper').removeClass('block');
+                    jQuery(this).parent().find('> ul.sub-menu').removeClass('block');
                 }
+                
         });
     }
     jQuery('.techvertu-navigate-to-section ul li a').click(function(){
@@ -91,7 +100,7 @@ jQuery(document).ready(function(){
     jQuery('.close-mobile-menu').click(function(){
         jQuery('.menu-main-header-container').removeClass('block');
     });
-    jQuery('.mobile-menu').click(function(){
+    jQuery('.menu-click').click(function(){
         jQuery('.menu-main-header-container').addClass('block');
     });
     jQuery('.small-image-news .elementor-post__thumbnail').append('<i class="fi fi-rr-link-alt"></i>');
@@ -109,39 +118,41 @@ jQuery(document).ready(function(){
         jQuery('.techvertu-no-product').parent().wrap("<div class='no-product-holder clearfix'></div>");
         // jQuery('.techvertu-no-product').parent().addClass('nope-product-background');
     }
-    const swiper = new Swiper('.techvertu-swiper', {
-        direction: 'horizontal',
-        slidesPerView: 5,
-        spaceBetween: 20,
-        breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10
+   
+        const swiper = new Swiper('.techvertu-swiper', {
+            direction: 'horizontal',
+            slidesPerView: 5,
+            spaceBetween: 20,
+            breakpoints: {
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10
+                },
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 10
+                },
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 15
+                },
+                920: {
+                    slidesPerView: 5,
+                    spaceBetween: 15
+                  }
             },
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 10
+            pagination: {
+                el: '.swiper-pagination',
             },
-            640: {
-              slidesPerView: 3,
-              spaceBetween: 15
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
-            920: {
-                slidesPerView: 5,
-                spaceBetween: 15
-              }
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-             el: '.swiper-scrollbar',
-        },
-    });
+            scrollbar: {
+                 el: '.swiper-scrollbar',
+            },
+        });
+   
     if(jQuery('.filters').length > 0){
 
         jQuery('.filters > div').each(function(){

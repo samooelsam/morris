@@ -150,6 +150,23 @@ $mobile: 480px;
             }
         }
     }
+    .top-nav-links {
+        padding:10px;
+        box-sizing: border-box;
+        ul {
+            width:100%;
+            li{
+                display: inline-block;
+                width:100%;
+                text-align: left;
+            }
+        }
+    }
+    .top-header{
+        .grid_6{
+            width:100%;
+        }
+    }
     .qoat-wrapper{
         padding:32px;
     }
@@ -467,9 +484,47 @@ $mobile: 480px;
         .image-wrapper, .techvertu-no-product-content {
             width:100%;
         }
-        .techvertu-no-product-content{
+        .techvertu-no-product-content {
             padding: 20px;
             box-sizing: content-box;
+        }
+    }
+    .main-nav-links {
+        .menu-main-header-container{
+            ul{
+                li{
+                    a{
+                        i{
+                            height:25px;
+                            position: relative;
+                            z-index: 100000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .main-nav-links{
+        .menu-main-header-container{
+            ul {
+                li{
+                    position: relative;
+                    i.nav-opener{
+                        position: absolute;
+                        top: 20px;
+                        font-size: 23px;
+                        right: 0;
+                        width: 50px;
+                        height: 50px;
+                        z-index: 2;
+                        display: block;
+                    }
+                    i.desktop-icn{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

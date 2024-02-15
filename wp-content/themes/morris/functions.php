@@ -99,9 +99,9 @@ endif;
 
 function morris_landing_scripts()
 {
-    wp_enqueue_style('morris-landing-styles', get_template_directory_uri() . '/css/style.css?version=1.2.5');
+    wp_enqueue_style('morris-landing-styles', get_template_directory_uri() . '/css/style.css?version=1.2.6');
     wp_enqueue_script( 'swiperesmb', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js',array(),'8.4.4',true);
-    wp_enqueue_script('morris-landing-styles', get_template_directory_uri() . '/js/scripts.js?version=1.0.1', array(), '1.1.0', true);
+    wp_enqueue_script('morris-landing-styles', get_template_directory_uri() . '/js/scripts.js?version=1.0.2', array(), '1.0.2', true);
 }
 add_action('wp_enqueue_scripts', 'morris_landing_scripts');
 
