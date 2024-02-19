@@ -105,7 +105,14 @@ class enquiryForm extends Widget_Base
 			$productSKU = $product->get_sku();
 		}
         if(isset($_REQUEST['contact-submit'])){
-			
+			$headers = array('Content-Type: text/html; charset=UTF-8');
+			// $recaptcha_response = $_REQUEST['recaptcha_response'];
+			// // calling google recaptcha api.
+			// print_r($_REQUEST);
+			// $secret = '6Lf1CmMpAAAAAEOaAp2-X23LGBB_r_fL6FbACmwE';
+			// $siteKey = '6Lf1CmMpAAAAAJJSNY4nllZucYYqA31pbKqymTO7'
+			// $recaptchaContent=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$recaptcha_response);
+			// $recaptcha = json_decode($recaptchaContent);
 			$senderEmail = sanitize_text_field($_REQUEST['senderEmail']);
 			$to = sanitize_email($_REQUEST['senderEmail']);
 			$subject = sanitize_text_field('enquire for '. $productTitle);
@@ -119,8 +126,7 @@ class enquiryForm extends Widget_Base
 			$phonenumber = preg_replace('/[^0-9]/', '', $_REQUEST['phonenumber']);
 			$postCode = preg_replace('/[^0-9]/', '', $_REQUEST['postecode']);
 			$note = sanitize_text_field($_REQUEST['note']);
-			$headers = array('Content-Type: text/html; charset=UTF-8');
-			$body = '<img src="https://dev.morrismachinery.co.uk/wp-content/uploads/2023/08/Logo-MORRIS.svg" />
+			$body = '<img src="https://morrismachinery.co.uk/wp-content/uploads/2023/08/Logo-MORRIS.svg" />
 					<p>A New contact form has been submitted.Please find the customers detail below</p>
 					<strong style="width:200px;display: inline-block;">Name :</strong>'. $firstName .' ' .$lastName. 
 					'<br> <strong style="width:200px;display: inline-block;">Business name : </strong>' . $businessName.'
@@ -130,7 +136,7 @@ class enquiryForm extends Widget_Base
 					 <strong style="width:200px;display: inline-block;">SKU:</strong>'.$sku. '<br>
 					 <strong style="width:200px;display: inline-block;"> Quantity:</strong>'.$quantity.'
 					 <br> <strong style="width:200px;display: inline-block;">Message :</strong> <br>' .$note;
-			if($to && $subject && $body){
+			if($to && $subject && $body && $phonenumber && $postCode && $note && $firstName && $lastName) {
 				wp_mail( 'info@morrismachinery.co.uk', $subject, $body, $headers ); 
 				$successFlag = '1';
 			}
@@ -166,6 +172,7 @@ class enquiryForm extends Widget_Base
                             <p><?php echo($alertMessage);?></p>
                         </div>
                     <?php }?>
+					
                     <form method="POST" action="<?php echo ($_SERVER['REQUEST_URI']); ?>">
                         <div class="form-sender clearfix">
                             <label><input type="hidden" name="productTitle" value="<?php echo($productTitle);?>" ><span class="title-changer"><?php echo($productTitle);?></span></label>
@@ -199,8 +206,11 @@ class enquiryForm extends Widget_Base
                         <div class="form-column grid_12 clearfix">
                             <textarea name="note" placeholder="<?php _e('Message', 'morris')?>"><?php echo($note);?></textarea>
                         </div>
+						<div class="form-column grid_12 clearfix">
+							<p class="red-field"><?php _e('* All fields are required', 'techvertu');?></p>
+						</div>
                         <div class="form-column grid_12 clearfix">
-                            <input type="submit" class="contact-submit" name="contact-submit" value="<?php _e('Enquire', 'morris');?>" />
+                            <input type="submit" class="contact-submit"  name="contact-submit" value="<?php _e('Enquire', 'morris');?>" />
                         </div>
                     </form>
                 </div>
