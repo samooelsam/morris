@@ -280,6 +280,19 @@ a.jcarousel-next {
   left: 0;
   right: auto; }
 
+@media only screen and (max-width: 780px) {
+  html .techvertu-caller-box-info .column.small-col, html .techvertu-caller-box-info .column.wide-col {
+    width: 100%;
+    margin-bottom: 20px; }
+  html .techvertu-caller-box-info .cannot-find .cannot-find-footer a {
+    padding: 8px 6px; }
+    html .techvertu-caller-box-info .cannot-find .cannot-find-footer a i {
+      margin-top: 4px;
+      float: left;
+      margin-left: 10px; } }
+@media only screen and (max-width: 480px) {
+  .styled-text-box-item {
+    width: 100% !important; } }
 .techvertu-industry-tabs {
   font-size: 0;
   border: 1px solid #008EAA;
@@ -575,6 +588,59 @@ a.jcarousel-next {
       .techvertu-on-call-box .contact-call a i {
         margin-right: 10px;
         vertical-align: middle; }
+
+.techvertu-caller-box-info {
+  margin-top: 20px;
+  position: relative; }
+  .techvertu-caller-box-info .column.small-col {
+    width: 39%; }
+  .techvertu-caller-box-info .column.wide-col {
+    width: 59.6%;
+    float: right; }
+  .techvertu-caller-box-info .cannot-find {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 1px 20px -10px #cecece;
+    background-color: #008EAA;
+    height: 460px;
+    padding: 30px;
+    box-sizing: border-box; }
+    .techvertu-caller-box-info .cannot-find .cannot-find-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px; }
+      .techvertu-caller-box-info .cannot-find .cannot-find-footer span {
+        font-size: 26px;
+        line-height: 35px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 10px;
+        display: block; }
+      .techvertu-caller-box-info .cannot-find .cannot-find-footer a {
+        padding: 14px 20px;
+        background-color: #ED6B06;
+        color: #fff;
+        font-size: 31px;
+        font-weight: bold;
+        display: block;
+        border-radius: 10px;
+        background-color: transparent;
+        background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+        text-align: center; }
+  .techvertu-caller-box-info h3 {
+    font-size: 39px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 53px;
+    text-transform: uppercase; }
+
+.techvertu-video-player {
+  border-radius: 15px;
+  overflow: hidden; }
+  .techvertu-video-player iframe {
+    display: block; }
 
 .fileCounter {
   display: block;

@@ -527,6 +527,25 @@ $mobile: 480px;
             }
         }
     }
+    .menu-top-menu-container{
+        ul {
+            > li{
+                &:hover{
+                    ul.sub-menu{
+                        width: 98%;
+                        border-radius: 0;
+                        top: 90%;
+                    }
+                }
+            }
+        }
+    }
+    .product-image-wrapper{
+        width:100%;
+    }
+    .techvertu-enquiry-form-wrapper{
+        width:100%;
+    }
 }
 @media only screen and (max-width: $mobile) {
     .techvertu-product-cats {
@@ -547,6 +566,7 @@ $mobile: 480px;
             margin-top: 10px;
         }
     }
+    
 }
 @media only screen and (max-width: 350px) {
     

@@ -181,6 +181,116 @@ jQuery(document).ready(function(){
           }
           return phaseValue;
     }
-    
+    jQuery('#enquire-form').submit(function(event){
+        var quantity = '';
+        (jQuery('#prQuantity').val()) ? quantity = jQuery('#prQuantity').val() : quantity = 1;
+        var senderEmail = jQuery('#senderEmail').val();
+        var businessName = jQuery('#businessName').val();
+        var firstname = jQuery('#firstname').val();
+        var lastname = jQuery('#lastname').val();
+        var phonenumber = jQuery('#phonenumber').val();
+        var postecode = jQuery('#postecode').val();
+        var firstNameTester = techvertu_firstname_lastname_checker(firstname);
+        var lastnameTester = techvertu_firstname_lastname_checker(lastname);
+        var phoneNumberTested = techvertu_mobile_number_tester(phonenumber);
+        var productTitle = jQuery("#productTitle").val();
+        var sku = jQuery('#prSKU').val();
+        console.log(phoneNumberTested);
+        var postalCodeResult = techvertu_gb_postalcode_tester(postecode);
+        var recaptcha = jQuery('#g-recaptcha').val();
+        var note = jQuery('#note').val();
+        jQuery('#enquire-form input, #enquire-form textarea').removeClass('red');
+        
+        if(quantity && senderEmail && businessName && firstname && firstNameTester == true && lastnameTester == true && lastname && phoneNumberTested == true && postalCodeResult == true && note){
+            jQuery('.spinner').removeClass('none');
+            jQuery('.contact-submit').attr('disabled', 'disabled');
+            jQuery('.techvertu-enquiry-form .alert').remove();
+            jQuery.ajax({
+                url: frontendajax.ajaxurl,
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    action: 'techvertu_send_enquiry',
+                    "quantity" : quantity, 
+                    "senderEmail" : senderEmail,
+                    "businessName" : businessName,
+                    "firstname" : firstname,
+                    "lastname" : lastname,
+                    "productTitle" : productTitle,
+                    "phonenumber" : phonenumber,
+                    "postecode" : postecode,
+                    "sku": sku,
+                    "note" : note,
+                    "recaptcha": recaptcha
+                },
+                success: function (response ) {
+                    jQuery('.spinner').addClass('none');
+                    jQuery('.contact-submit').removeAttr('disabled');
+                    jQuery('.techvertu-enquiry-form').prepend('<div class="alert green"><p>Your message has been successfully sent</p></div>');
+                    jQuery('#enquire-form')[0].reset();
+                },
+                error: function (response) {
+                    jQuery('.spinner').addClass('none');
+                    jQuery('.contact-submit').removeAttr('disabled');
+                    techvertu_error_message();
+                    jQuery('#enquire-form')[0].reset();
+                    
+                }
+            });
+            
+            return false;
+        } else {
+            jQuery('.techvertu-enquiry-form .alert').remove();
+            techvertu_error_message();
+            techvertu_empty_field_detector(quantity , senderEmail , businessName , firstname , lastname , phonenumber , postecode , note, postalCodeResult, phoneNumberTested, firstNameTester, lastnameTester);
+            return false;
+        }
+        event.stopImmediatePropagation();
+    });
+    function techvertu_empty_field_detector(quantity , senderEmail , businessName , firstname , lastname , phonenumber , postecode , note, postalCodeResult, phoneNumberTested, firstNameTester, lastnameTester){
+        if(!quantity){
+            jQuery('#prQuantity').addClass('red');
+        }
+        if(!senderEmail){
+            jQuery('#senderEmail').addClass('red');
+        }
+        if(!businessName){
+            jQuery('#businessName').addClass('red');
+        }
+        if(!firstname || firstNameTester == false){
+            jQuery('#firstname').addClass('red');
+        }
+        if(!lastname || lastnameTester == false){
+            jQuery('#lastname').addClass('red');
+        }
+        if(!phonenumber || phoneNumberTested == false){
+            jQuery('#phonenumber').addClass('red');
+        }
+        if(!postecode || postalCodeResult == false){
+            jQuery('#postecode').addClass('red');
+        }
+        if(!note){
+            jQuery('#note').addClass('red');
+        }
+    }
+    function techvertu_error_message(){
+        jQuery('.techvertu-enquiry-form').prepend('<div class="alert red"><p>All fields are required. Please fill out all fields</p></div>');
+    }
+    function techvertu_mobile_number_tester(mobileNumber) {
+        var regex = /\+[0-9]{12}/;
+        var result = regex.test(mobileNumber);
+        return result;
+    }
+    function techvertu_firstname_lastname_checker(selectedName){
+        var firstNameLastNameReg = new RegExp('^[a-zA-Z]+$');
+        var selectedNameResult = firstNameLastNameReg.test(selectedName);
+        return selectedNameResult;
+
+    }
+    function techvertu_gb_postalcode_tester(postalcode){
+        var postalCodeRegex = new RegExp('^[a-zA-Z]{1,2}[0-9][0-9A-Za-z]{0,1} {0,1}[0-9][A-Za-z]{2}$');
+        var psstalCodeRegexResult = postalCodeRegex.test(postalcode);
+        return psstalCodeRegexResult;
+    }
 });
 

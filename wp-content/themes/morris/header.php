@@ -19,10 +19,13 @@
                 }
                 ?></title>
     <meta charset="UTF-8">
+    
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
-    
+    <script type="text/javascript">
+        var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+    </script>
     <link rel="shortcut icon" href="<?php echo(bloginfo('template_directory'));?>/img/favicon-1.png">
     <link rel="icon" href="<?php echo(bloginfo('template_directory'));?>/img/favicon-1.png" type="image/png">
     <link rel="shortcut icon" href="<?php echo(bloginfo('template_directory'));?>/img/favicon-1.png">

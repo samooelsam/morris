@@ -101,7 +101,9 @@ function morris_landing_scripts()
 {
     wp_enqueue_style('morris-landing-styles', get_template_directory_uri() . '/css/style.css?version=1.2.6');
     wp_enqueue_script( 'swiperesmb', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js',array(),'8.4.4',true);
-    wp_enqueue_script('morris-landing-styles', get_template_directory_uri() . '/js/scripts.js?version=1.0.2', array(), '1.0.2', true);
+    wp_enqueue_script('morris-landing-scripts', get_template_directory_uri() . '/js/scripts.js?version=1.0.2', array(), '1.0.2', true);
+    wp_localize_script( 'morris-landing-scripts', 'frontendajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
+
 }
 add_action('wp_enqueue_scripts', 'morris_landing_scripts');
 
@@ -224,3 +226,43 @@ function techvertu_posts_order_wpse()
     add_post_type_support( 'post', 'page-attributes' );
 }
 
+function techvertu_send_enquiry() {
+    
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+    $senderEmail = sanitize_text_field($_POST['senderEmail']);
+    $to = sanitize_email($_POST['senderEmail']);
+    $productTitle = sanitize_text_field($_POST['productTitle']);
+    $subject = sanitize_text_field('enquire for '. $productTitle);
+    $sku = sanitize_text_field( $_POST['productSKU']);   
+    $firstName = sanitize_text_field($_POST['firstname']);
+    $lastName = sanitize_text_field($_POST['lastname']);
+    $businessName = sanitize_text_field($_POST['businessName']);
+    $quantity = $_POST["quantity"];
+    $sku = sanitize_text_field($_POST['sku']);
+    $phonenumber = $_POST['phonenumber'];
+    $postCode = $_POST['postecode'];
+    // $secretAPIkey = '6Lf1CmMpAAAAAEOaAp2-X23LGBB_r_fL6FbACmwE';
+    // $verifyResponse = file_get_contents( 'https://www.google.com/recaptcha/api/siteverify?secret='.$secretAPIkey.'&response='.$reCAPTCHA.'&remoteip='.$_SERVER['REMOTE_ADDR'] );
+    $note = sanitize_text_field($_POST['note']);
+    $body = '<img src="https://www.morrismachinery.co.uk/wp-content/uploads/2023/08/Logo-MORRIS.svg" />
+            <p>A New contact form has been submitted.Please find the customers detail below</p>
+            <strong style="width:200px;display: inline-block;">Name :</strong>'. $firstName .' ' .$lastName. 
+            '<br> <strong style="width:200px;display: inline-block;">Business name : </strong>' . $businessName.'
+                <br><strong style="width:200px;display: inline-block;"> Contact number :</strong>' . $phonenumber. 
+                '<br> <strong style="width:200px;display: inline-block;">Post code :</strong>' .$postCode.
+            '<br> <strong style="width:200px;display: inline-block;">Email : </strong>'.$to. '<br>
+                <strong style="width:200px;display: inline-block;">SKU:</strong>'.$sku. '<br>
+                <strong style="width:200px;display: inline-block;"> Quantity:</strong>'.$quantity.'
+                <br> <strong style="width:200px;display: inline-block;">Message :</strong> <br>' .$note;
+    if($to && $subject && $body && $phonenumber && $postCode && $note && $firstName && $lastName ) {
+        wp_mail( 'info@morrismachinery.co.uk', $subject, $body, $headers ); //info@morrismachinery.co.uk
+        $successFlag = '1';
+    }
+    else {
+        $successFlag = '0';
+    }
+    echo($successFlag);
+    wp_die();
+}
+add_action( 'wp_ajax_techvertu_send_enquiry', 'techvertu_send_enquiry' );    // If called from admin panel
+add_action( 'wp_ajax_nopriv_techvertu_send_enquiry', 'techvertu_send_enquiry' ); 

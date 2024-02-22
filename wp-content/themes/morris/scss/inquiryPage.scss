@@ -57,6 +57,10 @@
             @include inputs;
             box-sizing: border-box;
             padding:10px;
+            color:#393939 !important;
+        }
+        input.red, textarea.red{
+            border-color: red;
         }
     }
     .form-column.grid_6{
@@ -68,6 +72,10 @@
         @include woocommerceButton;
         width:100%;
         cursor: pointer;
+        &:disabled{
+            background-color: #ebebeb !important;
+            cursor: default;
+        }
     }
     .form-sender {
         span{
@@ -107,4 +115,13 @@
             margin-right: 10px;
         }
     }
+}
+.spinner{
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    bottom: 37px;
+}
+.spinner.none{
+    display: none;
 }

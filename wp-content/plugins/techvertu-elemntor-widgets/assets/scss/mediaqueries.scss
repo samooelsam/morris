@@ -9,8 +9,33 @@ $mobile: 480px;
 @media only screen and (max-width: $miniDesktop) {
 }
 @media only screen and (max-width: $tablet) {
+    html{
+        .techvertu-caller-box-info {
+            .column.small-col, .column.wide-col{
+                width:100%;
+                margin-bottom: 20px;
+            }
+            .cannot-find {
+                .cannot-find-footer {
+                    a{
+                        padding: 8px 6px;
+                        i{
+                            margin-top: 4px;
+                            float: left;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 @media only screen and (max-width: $mobile) {
+    .styled-text-box-item{
+        width:100% !important;
+    }
 }
 @media only screen and (max-width: 350px) {
+    
 }

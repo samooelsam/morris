@@ -76,3 +76,65 @@
         }
     }
 }
+
+.techvertu-caller-box-info{
+    margin-top: 20px;
+    position: relative;
+    .column.small-col{
+        width:39%;
+    }
+    .column.wide-col{
+        width: 59.6%;
+        float: right;    
+    }
+    .cannot-find {
+        position: relative;
+        border-radius: 15px;
+        box-shadow: 0px 1px 20px -10px #cecece;
+        background-color: $AlternativeSpot;
+        height:460px;
+        padding:30px;
+        box-sizing: border-box;
+        .cannot-find-footer{
+            position: absolute;
+            bottom:0;
+            left: 0;
+            right: 0;
+            padding:30px;
+            span{
+                font-size:26px;
+                line-height:35px;
+                font-weight: 300;
+                color:rgba(255, 255, 255, 0.7);
+                margin-bottom: 10px;
+                display: block;
+            }
+            a{
+                padding: 14px 20px;
+                background-color: $mainSpot;
+                color: #fff;
+                font-size: 31px;
+                font-weight: bold;
+                display: block;
+                border-radius: 10px;
+                background-color: transparent;
+                background-image: linear-gradient(338deg, #ED6B06 11%, #FF9854 68%);
+                text-align: center;
+            }
+        }
+    }
+    h3{
+        font-size:39px;
+        font-weight: 600;
+        color:#fff;
+        line-height: 53px;
+        text-transform: uppercase;
+    }
+}
+.techvertu-video-player{
+    border-radius: 15px;
+    overflow: hidden;
+    iframe{
+        display: block;
+    }
+}

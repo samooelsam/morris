@@ -161,14 +161,26 @@ class generatorGuide extends Widget_Base
                     </article>
                 <?php }?>
             </div>
-            <div class="techvertu-on-call-box clearfix">
-                <div class="contact-text clearfix column">
-                    <h4><?php echo($settings['contact_title']);?></h4>
-                </div>
-                <div class="contact-call clearfix column">
-                    <a href="tel:<?php echo($settings['contact_link']['url']);?>"><i class="fi fi-rr-phone-call"></i><?php _e('Call our team on ', 'morris');?><?php echo($settings['contact_link']['url']);?></a>
-                </div>
-            </div>
+            
+			<div class="techvertu-caller-box-info clearfix">
+				<div class="column small-col clearfix">
+					<div class="cannot-find clearfix">
+						<h3>Can't find<br>the answer you need?</h3>
+						<footer class="cannot-find-footer clearfix">
+							<span>Call our team on</span>
+							<a href="tel:<?php echo (str_replace(' ', '', $settings['contact_link']['url']));?>" class="cant-find-call-action clearfix">
+								<i class="fi fi-rr-phone-call"></i>
+								<?php echo (str_replace(' ', '', $settings['contact_link']['url']));?>
+							</a>
+						</footer>
+					</div>
+				</div>
+				<div class="column wide-col clearfix">
+					<div class="techvertu-video-player clearfix">
+						<iframe width="560" height="460" src="https://www.youtube.com/embed/SKm4NTq2uNw?si=8fxyxgoEqWQGmS1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
 		<?php 
 	}
 
@@ -186,14 +198,25 @@ class generatorGuide extends Widget_Base
                     </article>
                  <# }); #>
             </div>
-            <div class="techvertu-on-call-box clearfix">
-                <div class="contact-text clearfix column">
-                    <h4>{{settings.contact_title}}</h4>
-                </div>
-                <div class="contact-call clearfix column">
-                    <a href="tel:{{settings.contact_link.url}}"><i class="fi fi-rr-phone-call"></i>Call our team on {{settings.contact_link.url}}</a>
-                </div>
-            </div>
+			<div class="techvertu-caller-box-info clearfix">
+				<div class="column small-col clearfix">
+					<div class="cannot-find clearfix">
+						<h3>Can't find<br>the answer you need?</h3>
+						<footer class="cannot-find-footer clearfix">
+							<span>Call our team on</span>
+							<a href="tel:{{settings.contact_link.url}}" class="cant-find-call-action clearfix">
+								<i class="fi fi-rr-phone-call"></i>
+								{{settings.contact_link.url}}
+							</a>
+						</footer>
+					</div>
+				</div>
+				<div class="column wide-col clearfix">
+					<div class="techvertu-video-player clearfix">
+						<iframe width="560" height="460" src="https://www.youtube.com/embed/SKm4NTq2uNw?si=8fxyxgoEqWQGmS1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
 		<?php 
 	}
 }

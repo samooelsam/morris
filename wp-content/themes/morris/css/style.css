@@ -1316,7 +1316,7 @@ a.back-to-home {
   display: none; }
 
 i.top-menu {
-  background: url("../img/more.png") no-repeat center center;
+  background: url("../img/three-dots.svg") no-repeat center center;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -1802,7 +1802,18 @@ html .field-privacy_policy .description a {
       z-index: 2;
       display: block; }
     .main-nav-links .menu-main-header-container ul li i.desktop-icn {
-      display: none; } }
+      display: none; }
+
+  .menu-top-menu-container ul > li:hover ul.sub-menu {
+    width: 98%;
+    border-radius: 0;
+    top: 90%; }
+
+  .product-image-wrapper {
+    width: 100%; }
+
+  .techvertu-enquiry-form-wrapper {
+    width: 100%; } }
 @media only screen and (max-width: 480px) {
   .techvertu-product-cats .swiper-slide {
     height: 500px !important; }
@@ -2949,7 +2960,10 @@ a.elementor-lost-password {
     min-height: 47px !important;
     color: #AFB5C6 !important;
     box-sizing: border-box;
-    padding: 10px; }
+    padding: 10px;
+    color: #393939 !important; }
+  .techvertu-enquiry-form .form-column input.red, .techvertu-enquiry-form .form-column textarea.red {
+    border-color: red; }
 .techvertu-enquiry-form .form-column.grid_6 input {
   width: 96%; }
 .techvertu-enquiry-form input.contact-submit {
@@ -2961,6 +2975,9 @@ a.elementor-lost-password {
   color: #fff !important;
   width: 100%;
   cursor: pointer; }
+  .techvertu-enquiry-form input.contact-submit:disabled {
+    background-color: #ebebeb !important;
+    cursor: default; }
 .techvertu-enquiry-form .form-sender span {
   display: block;
   font-size: 23px; }
@@ -2991,6 +3008,15 @@ a.elementor-lost-password {
     justify-content: center;
     align-items: center;
     margin-right: 10px; }
+
+.spinner {
+  display: inline-block;
+  width: 30px;
+  position: absolute;
+  bottom: 37px; }
+
+.spinner.none {
+  display: none; }
 
 .team-members .elementor-image-box-content p {
   text-align: center; }

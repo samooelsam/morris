@@ -104,47 +104,12 @@ class enquiryForm extends Widget_Base
 			$productTitle = $product->get_title();
 			$productSKU = $product->get_sku();
 		}
-        if(isset($_REQUEST['contact-submit'])){
-			$headers = array('Content-Type: text/html; charset=UTF-8');
-			// $recaptcha_response = $_REQUEST['recaptcha_response'];
-			// // calling google recaptcha api.
-			// print_r($_REQUEST);
-			// $secret = '6Lf1CmMpAAAAAEOaAp2-X23LGBB_r_fL6FbACmwE';
-			// $siteKey = '6Lf1CmMpAAAAAJJSNY4nllZucYYqA31pbKqymTO7'
-			// $recaptchaContent=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$recaptcha_response);
-			// $recaptcha = json_decode($recaptchaContent);
-			$senderEmail = sanitize_text_field($_REQUEST['senderEmail']);
-			$to = sanitize_email($_REQUEST['senderEmail']);
-			$subject = sanitize_text_field('enquire for '. $productTitle);
-            $sku = sanitize_text_field( $_REQUEST['productSKU']);
-			$firstName = sanitize_text_field($_REQUEST['firstname']);
-			$lastName = sanitize_text_field($_REQUEST['lastname']);
-			$businessName = sanitize_text_field($_REQUEST['businessName']);
-			if($_REQUEST["prQuantity"]){
-				$quantity = $_REQUEST["prQuantity"];
-			}
-			$phonenumber = preg_replace('/[^0-9]/', '', $_REQUEST['phonenumber']);
-			$postCode = preg_replace('/[^0-9]/', '', $_REQUEST['postecode']);
-			$note = sanitize_text_field($_REQUEST['note']);
-			$body = '<img src="https://morrismachinery.co.uk/wp-content/uploads/2023/08/Logo-MORRIS.svg" />
-					<p>A New contact form has been submitted.Please find the customers detail below</p>
-					<strong style="width:200px;display: inline-block;">Name :</strong>'. $firstName .' ' .$lastName. 
-					'<br> <strong style="width:200px;display: inline-block;">Business name : </strong>' . $businessName.'
-					 <br><strong style="width:200px;display: inline-block;"> Contact number :</strong>' . $phonenumber. 
-					 '<br> <strong style="width:200px;display: inline-block;">Post code :</strong>' .$postCode.
-					'<br> <strong style="width:200px;display: inline-block;">Email : </strong>'.$to. '<br>
-					 <strong style="width:200px;display: inline-block;">SKU:</strong>'.$sku. '<br>
-					 <strong style="width:200px;display: inline-block;"> Quantity:</strong>'.$quantity.'
-					 <br> <strong style="width:200px;display: inline-block;">Message :</strong> <br>' .$note;
-			if($to && $subject && $body && $phonenumber && $postCode && $note && $firstName && $lastName) {
-				wp_mail( 'info@morrismachinery.co.uk', $subject, $body, $headers ); 
-				$successFlag = '1';
-			}
-			else {
-				$successFlag = '0';
-			}
-			
-        }
+		if($_REQUEST["prQuantity"]){
+			$quantity = $_REQUEST["prQuantity"];
+		}
+		$subject = sanitize_text_field('enquire for '. $productTitle);
+        $sku = sanitize_text_field( $_REQUEST['productSKU']);
+        
 		if($successFlag == '1'){
 			$alertMessage = 'Your message has been successfully sent';
 			$alertColorClass = 'green';
@@ -158,6 +123,8 @@ class enquiryForm extends Widget_Base
 		}
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $productID ), 'product-thumbnail' );
 		?>
+	
+		
         <div class="techvertu-product-info-wrapper clearfix">
             <figure class="product-image-wrapper grid_6 clearfix">
                 <img src="<?php echo($image[0]);?>" />
@@ -173,44 +140,45 @@ class enquiryForm extends Widget_Base
                         </div>
                     <?php }?>
 					
-                    <form method="POST" action="<?php echo ($_SERVER['REQUEST_URI']); ?>">
+                    <form action="<?php echo ($_SERVER['REQUEST_URI']); ?>" method="post" id="enquire-form" >
                         <div class="form-sender clearfix">
-                            <label><input type="hidden" name="productTitle" value="<?php echo($productTitle);?>" ><span class="title-changer"><?php echo($productTitle);?></span></label>
-                            <label><input type="hidden" name="productSKU" value="<?php echo($productSKU);?>" /><span class="sku-changer"><?php _e('SKU', 'morris');?>:<?php echo($productSKU);?></span></label>
+                            <label><input type="hidden" name="productTitle" id="productTitle" value="<?php echo($productTitle);?>" ><span class="title-changer"><?php echo($productTitle);?></span></label>
+                            <label><input type="hidden" name="productSKU" id="prSKU" value="<?php echo($productSKU);?>" /><span class="sku-changer"><?php _e('SKU', 'morris');?>:<?php echo($productSKU);?></span></label>
                         </div>
 						<div class="form-column grid_2 clearfix">
-							<input type="number" name="prQuantity" value="" placeholder="1" >
+							<input id="prQuantity" type="number" name="prQuantity" value="" placeholder="1" >
 						</div>
 						<div class="grid_10 link-products form-column clearfix">
 							<a href="<?php echo(get_permalink($productID));?>"><i class="fi fi-rr-link-alt"></i><?php _e('Go to product page', 'morris');?></a>
 						</div>
                         <div class="form-column grid_12 clearfix">
-                            <input type="email" name="senderEmail" value="<?php echo($senderEmail);?>" placeholder="Email" >
+                            <input type="email" name="senderEmail" id="senderEmail" value="<?php echo($senderEmail);?>" placeholder="Email" >
                         </div>
 						<div class="form-column grid_12 clearfix">
-                            <input type="text" name="businessName" value="<?php echo($businessName);?>" placeholder="Business Name" >
+                            <input type="text" name="businessName" id="businessName" value="<?php echo($businessName);?>" placeholder="Business Name" >
                         </div>
                         <div class="form-column grid_6 clearfix">
-                            <input type="text" name="firstname" placeholder="First name" value="<?php echo($firstName);?>" >
+                            <input type="text" name="firstname" id="firstname" placeholder="First name" value="<?php echo($firstName);?>" >
                         </div>
                         <div class="form-column grid_6 clearfix">
-                            <input type="text" placeholder="<?php _e('Last name', 'morris');?>" name="lastname" value="<?php echo($lastName);?>"/>
+                            <input type="text" placeholder="<?php _e('Last name', 'morris');?>" name="lastname" id="lastname" value="<?php echo($lastName);?>"/>
                             <i class="icon-Edit"></i>
                         </div>
                         <div class="form-column grid_12 clearfix">
-                            <input type="text" placeholder="<?php _e('Contact number', 'morris');?>" name="phonenumber" value="<?php echo($phonenumber);?>"/>
+                            <input type="text" placeholder="<?php _e('Contact number', 'morris');?>" name="phonenumber" id="phonenumber" value="<?php echo($phonenumber);?>"/>
                         </div>
 						<div class="form-column grid_12 clearfix">
-                            <input type="text" placeholder="<?php _e('Post code', 'morris');?>" name="postecode" value="<?php echo($postCode);?>"/>
+                            <input type="text" placeholder="<?php _e('Post code', 'morris');?>" name="postecode" id="postecode" value="<?php echo($postCode);?>"/>
                         </div>
                         <div class="form-column grid_12 clearfix">
-                            <textarea name="note" placeholder="<?php _e('Message', 'morris')?>"><?php echo($note);?></textarea>
+                            <textarea name="note" id="note" placeholder="<?php _e('Message', 'morris')?>"><?php echo($note);?></textarea>
                         </div>
 						<div class="form-column grid_12 clearfix">
 							<p class="red-field"><?php _e('* All fields are required', 'techvertu');?></p>
 						</div>
                         <div class="form-column grid_12 clearfix">
                             <input type="submit" class="contact-submit"  name="contact-submit" value="<?php _e('Enquire', 'morris');?>" />
+							<img src="<?php echo(bloginfo('template_directory'));?>/img/spining.svg" class="spinner none" />
                         </div>
                     </form>
                 </div>
