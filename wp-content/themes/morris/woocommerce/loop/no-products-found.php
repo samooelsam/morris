@@ -28,7 +28,7 @@ $message = __( 'Looks like we have nothing available currently, but please keep 
 	</figure>
 	<div class="techvertu-no-product-content clearfix">
 		<h3>OH NO!</h3>
-		<p><?php echo($message);?> <a href="tel:01902790824">01902 790824</a></p>
+		<p><?php echo($message);?> <a href="tel:01902790824"><strong><u>01902 790824</u></strong></a></p>
 		<a class="go-back" href="<?php echo(home_url('/all-products/new-products/'));?>"><i class="left-arrow"></i><?php _e('continue shopping', 'morris');?></a>
 	</div>
 </div>

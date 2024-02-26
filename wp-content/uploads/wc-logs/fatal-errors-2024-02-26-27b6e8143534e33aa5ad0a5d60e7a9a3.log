@@ -1,0 +1,172 @@
+2024-02-26T07:59:07+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:246
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 246
+
+2024-02-26T08:10:06+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:246
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 246
+
+2024-02-26T08:22:47+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:246
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 246
+
+2024-02-26T08:23:36+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:246
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 246
+
+2024-02-26T08:25:14+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:246
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 246
+
+2024-02-26T08:31:01+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:246
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 246
+
+2024-02-26T08:37:02+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:246
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 246
+
+2024-02-26T08:42:41+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:237
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php(266): techvertu_call_remote_api(NULL)
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#2 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#5 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 237
+
+2024-02-26T08:45:00+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:252
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 252
+
+2024-02-26T08:48:18+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:252
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 252
+
+2024-02-26T08:54:57+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:255
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 255
+
+2024-02-26T09:14:42+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:249
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 249
+
+2024-02-26T09:16:44+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:249
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 249
+
+2024-02-26T09:28:10+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:249
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 249
+
+2024-02-26T09:30:09+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:249
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 249
+
+2024-02-26T10:49:17+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:249
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 249
+
+2024-02-26T10:51:21+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:249
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 249
+
+2024-02-26T10:55:25+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:251
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 251
+
+2024-02-26T11:01:27+00:00 CRITICAL Uncaught Error: Undefined constant "SECRET_KEY" in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php:251
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): techvertu_send_enquiry('')
+#1 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\morris\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\morris\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\functions.php on line 251
+

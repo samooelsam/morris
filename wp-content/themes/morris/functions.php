@@ -226,6 +226,8 @@ function techvertu_posts_order_wpse()
     add_post_type_support( 'post', 'page-attributes' );
 }
 
+
+
 function techvertu_send_enquiry() {
     
     $headers = array('Content-Type: text/html; charset=UTF-8');
@@ -241,9 +243,17 @@ function techvertu_send_enquiry() {
     $sku = sanitize_text_field($_POST['sku']);
     $phonenumber = $_POST['phonenumber'];
     $postCode = $_POST['postecode'];
-    // $secretAPIkey = '6Lf1CmMpAAAAAEOaAp2-X23LGBB_r_fL6FbACmwE';
-    // $verifyResponse = file_get_contents( 'https://www.google.com/recaptcha/api/siteverify?secret='.$secretAPIkey.'&response='.$reCAPTCHA.'&remoteip='.$_SERVER['REMOTE_ADDR'] );
+    $reCAPTCHA = $_POST['g-recaptcha-response'];
     $note = sanitize_text_field($_POST['note']);
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $response = wp_remote_post( $url, array(
+        'body' => array(
+          'secret' => SECRET_KEY,
+          'response' => $reCAPTCHA
+        )
+      ) );
+    $recaptchaDecode = json_decode($url);
+    
     $body = '<img src="https://www.morrismachinery.co.uk/wp-content/uploads/2023/08/Logo-MORRIS.svg" />
             <p>A New contact form has been submitted.Please find the customers detail below</p>
             <strong style="width:200px;display: inline-block;">Name :</strong>'. $firstName .' ' .$lastName. 
@@ -254,7 +264,7 @@ function techvertu_send_enquiry() {
                 <strong style="width:200px;display: inline-block;">SKU:</strong>'.$sku. '<br>
                 <strong style="width:200px;display: inline-block;"> Quantity:</strong>'.$quantity.'
                 <br> <strong style="width:200px;display: inline-block;">Message :</strong> <br>' .$note;
-    if($to && $subject && $body && $phonenumber && $postCode && $note && $firstName && $lastName ) {
+    if($to && $subject && $body && $phonenumber && $postCode && $note && $firstName && $lastName && $recaptchaDecode->success == true && $recaptchaDecode->score > 0.5) { //
         wp_mail( 'info@morrismachinery.co.uk', $subject, $body, $headers ); //info@morrismachinery.co.uk
         $successFlag = '1';
     }

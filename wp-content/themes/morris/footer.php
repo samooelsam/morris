@@ -43,7 +43,7 @@
             <div class="column grid_3 footer-column">
                  <h3>Keep in touch</h3>
                 <div class="intouch clearfix">
-                    <p><a href="https://morrismachinery.co.uk/contact">Contact</a></p>
+                    <p><a href="https://www.morrismachinery.co.uk/contact">Contact</a></p>
                 <?php   $tel = get_option('company_tel');
                         $email = get_option('company_email');
                         $address = get_option('company_address');  
@@ -66,7 +66,7 @@
     <div class="down-footer clearfix">
         <div class="centerize clearfix">
             <div class="jfh-logo clearfix">
-                <a href="https://johnfhunt.co.uk" target="_blank">
+                <a href="https://www.johnfhunt.co.uk" target="_blank">
                     <img src="<?php echo(bloginfo('template_directory'))?>/img/JohnFHunt.svg" />
                 </a>
                 <span>Part of the <br> John F Hunt Group</span>
@@ -91,7 +91,7 @@
                         </a>
                     </li>
                 </ul>
-                <span>Web and IT Support - <a rel="nofollow" target="_blank" href="https://techvertu.co.uk">TechVertu</a></span>
+                <span>Web and IT Support - <a rel="nofollow" target="_blank" href="https://www.techvertu.co.uk">TechVertu</a></span>
             </div>
         </div>
     </div>

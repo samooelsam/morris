@@ -122,9 +122,12 @@ class enquiryForm extends Widget_Base
 			$alertColorClass = '';
 		}
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $productID ), 'product-thumbnail' );
+		
+		
+			
 		?>
 	
-		
+		<script src="https://www.google.com/recaptcha/api.js?render=<?php echo(SITE_KEY);?>"></script>
         <div class="techvertu-product-info-wrapper clearfix">
             <figure class="product-image-wrapper grid_6 clearfix">
                 <img src="<?php echo($image[0]);?>" />
@@ -176,11 +179,23 @@ class enquiryForm extends Widget_Base
 						<div class="form-column grid_12 clearfix">
 							<p class="red-field"><?php _e('* All fields are required', 'techvertu');?></p>
 						</div>
+						<div class="form-column grid_12 clearfix">
+							<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" />
+						</div>
                         <div class="form-column grid_12 clearfix">
                             <input type="submit" class="contact-submit"  name="contact-submit" value="<?php _e('Enquire', 'morris');?>" />
 							<img src="<?php echo(bloginfo('template_directory'));?>/img/spining.svg" class="spinner none" />
                         </div>
                     </form>
+					<script>
+						grecaptcha.ready(function(){
+							grecaptcha.execute("<?php echo(SITE_KEY)?>", {action: "homepage"})
+							.then(function(token){
+								document.getElementById('g-recaptcha-response').value = token;
+
+							});
+						});
+					</script>
                 </div>
             </div>
         </div>

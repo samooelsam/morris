@@ -195,9 +195,9 @@ jQuery(document).ready(function(){
         var phoneNumberTested = techvertu_mobile_number_tester(phonenumber);
         var productTitle = jQuery("#productTitle").val();
         var sku = jQuery('#prSKU').val();
+        var recaptcha = jQuery('#g-recaptcha-response').val();
         console.log(phoneNumberTested);
         var postalCodeResult = techvertu_gb_postalcode_tester(postecode);
-        var recaptcha = jQuery('#g-recaptcha').val();
         var note = jQuery('#note').val();
         jQuery('#enquire-form input, #enquire-form textarea').removeClass('red');
         
@@ -221,15 +221,17 @@ jQuery(document).ready(function(){
                     "postecode" : postecode,
                     "sku": sku,
                     "note" : note,
-                    "recaptcha": recaptcha
+                    "g-recaptcha-response": recaptcha
                 },
                 success: function (response ) {
+                    console.log(response);
                     jQuery('.spinner').addClass('none');
                     jQuery('.contact-submit').removeAttr('disabled');
                     jQuery('.techvertu-enquiry-form').prepend('<div class="alert green"><p>Your message has been successfully sent</p></div>');
                     jQuery('#enquire-form')[0].reset();
                 },
                 error: function (response) {
+                    console.log(response);
                     jQuery('.spinner').addClass('none');
                     jQuery('.contact-submit').removeAttr('disabled');
                     techvertu_error_message();

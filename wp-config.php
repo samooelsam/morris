@@ -84,7 +84,8 @@ ini_set('error_reporting', E_ALL );
 define('WP_DEBUG', false);
 define('WP_DEBUG_DISPLAY', false);
 define( 'WP_MEMORY_LIMIT', '256M');
-
+define('SITE_KEY', '6Lf1CmMpAAAAAJJSNY4nllZucYYqA31pbKqymTO7');
+define('SECRET_KEY', '6Lf1CmMpAAAAAEOaAp2-X23LGBB_r_fL6FbACmwE');
 /* Add any custom values between this line and the "stop editing" line. */
 
 
