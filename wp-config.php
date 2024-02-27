@@ -56,7 +56,7 @@ define( 'AUTH_SALT',        '3063f04120b28844404e50e1aef7b2a0158689a5' );
 define( 'SECURE_AUTH_SALT', 'cb7ca5a4458faad9b913d84788714477a35829cc' );
 define( 'LOGGED_IN_SALT',   '28bf0a8c878841ab2d44c918a516abf12cf58e98' );
 define( 'NONCE_SALT',       '09310ef9ea65838bedb5b1f9f4ddc03c74a780f6' );
-
+echo ('mamad');
 /**#@-*/
 
 /**
