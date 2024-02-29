@@ -175,6 +175,7 @@ class generatorGuide extends Widget_Base
 						</footer>
 					</div>
 				</div>
+				
 				<div class="column wide-col clearfix">
 					<div class="techvertu-video-player clearfix">
 						<iframe width="560" height="460" src="https://www.youtube.com/embed/SKm4NTq2uNw?si=8fxyxgoEqWQGmS1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
