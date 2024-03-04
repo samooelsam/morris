@@ -11,6 +11,12 @@
 /wp-content/plugins/index.php
 /wp-content/themes/index.php
 /wp-includes/
+/css/
+/img/
+/test/
+/.quarantine/
+/.tmb/
+/cgi-bin/
 /index.php
 /license.txt
 /readme.html
@@ -31,12 +37,18 @@ wp-config.php
 
 # Uploads
 /wp-content/uploads/
-
+/wp-content/themes/astra-child/assets/.sass-cache
+/wp-content/cache/
+/wp-content/astra-local-fonts/
+/wp-maintenance/
+/wp-content/uploads/uag-plugin
 # Log files
 *.log
+file.txt
+/file.txt
 
 # htaccess
-#/.htaccess
+/.htaccess
 
 # All plugins
 #
@@ -49,3 +61,4 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+/wp-content/themes/astra-child/assets/.sass-cache
