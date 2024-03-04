@@ -37,9 +37,7 @@ wp-config.php
 
 # Uploads
 /wp-content/uploads/
-/wp-content/themes/astra-child/assets/.sass-cache
 /wp-content/cache/
-/wp-content/astra-local-fonts/
 /wp-maintenance/
 /wp-content/uploads/uag-plugin
 # Log files
@@ -49,6 +47,7 @@ file.txt
 
 # htaccess
 /.htaccess
+.htaccess
 
 # All plugins
 #
@@ -61,4 +60,3 @@ file.txt
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
-/wp-content/themes/astra-child/assets/.sass-cache
