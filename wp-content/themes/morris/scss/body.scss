@@ -1024,6 +1024,7 @@ html .elementor-form-fields-wrapper{
 }
 .pagination{
   text-align: center;
+  margin-bottom: 10px;
   span.page-numbers, a.page-numbers{
     padding:10px;
     display: inline-block;
@@ -1037,6 +1038,7 @@ html .elementor-form-fields-wrapper{
     height: 50px;
     line-height: 31px;
     margin-right: 2%;
+    box-sizing: border-box;
   }
   span.current{
     background-color: $semiBlack;
