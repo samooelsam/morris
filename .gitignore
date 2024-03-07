@@ -12,6 +12,12 @@
 /wp-content/plugins/index.php
 /wp-content/themes/index.php
 /wp-includes/
+/css/
+/img/
+/test/
+/.quarantine/
+/.tmb/
+/cgi-bin/
 /index.php
 /license.txt
 /readme.html
@@ -33,13 +39,19 @@ wp-config.php
 
 # Uploads
 /wp-content/uploads/
+/wp-content/cache/
+/wp-maintenance/
+/wp-content/uploads/uag-plugin
 /wp-content/plugins/wpforms/cache
 
 # Log files
 *.log
+file.txt
+/file.txt
 
 # htaccess
 /.htaccess
+.htaccess
 
 # All plugins
 #
