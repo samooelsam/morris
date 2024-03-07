@@ -1,0 +1,134 @@
+.techvertu-news-wrapper{
+    .techvertu-news-header{
+        border-bottom:1px solid $grayStorke;
+        margin: 40px 0;
+        ul{
+            li{
+                display: inline-block;
+                width: 17.7%;
+                time{
+                    text-align: right;
+                    display: block;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                label{
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                select{
+                    border:1px solid #CFCFCF;
+                    padding:2px 9px;
+                    font-size: 14px;
+                    border-radius: $borderRadiusLighter;
+                    width: 62%;
+                    background-color: #fff;
+                }
+                button[type='submit']{
+                    @include button;
+                    width: 70%;
+                    font-size:15px;
+                    padding:8px;
+                }
+            }
+        }
+    }
+    .techvertu-item-news{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 2%;
+        margin-bottom: 30px;
+        a{
+            @include transition;
+            &:hover{
+                @include transition;
+                .overlay-content{
+                    background-color: rgba(237, 107, 6, 0.38);
+                    background-image: none;
+                    @include transition;
+                }
+                h3{
+                    color:$mainSpot;
+                }
+            }
+        }
+        &:nth-child(3n){
+            margin-right:0;
+        }
+    }
+    .image-wrapper{
+        position: relative;
+        height: 212px;
+        overflow: hidden;
+        border-radius: $borderRadiusLight;
+        img{
+            display: block;
+        }
+        svg{
+            display: inline-block;
+            vertical-align: middle;
+            fill:$AlternativeSpot;
+        }
+
+        .overlay-content{
+            position: absolute;
+            bottom:0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            top: 0;
+            background: rgba(255,255,255,0);
+            background: -moz-linear-gradient(top, rgba(255,255,255,0) 46%, rgba(236,236,236,1) 85%);
+            background: -webkit-gradient(left top, left bottom, color-stop(46%, rgba(255,255,255,0)), color-stop(85%, rgba(236,236,236,1)));
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0) 46%, rgba(236,236,236,1) 85%);
+            background: -o-linear-gradient(top, rgba(255,255,255,0) 46%, rgba(236,236,236,1) 85%);
+            background: -ms-linear-gradient(top, rgba(255,255,255,0) 46%, rgba(236,236,236,1) 85%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 46%, rgba(236,236,236,1) 85%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec', GradientType=0 );
+            .post-meta-data{
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                right: 0;
+                max-width: 90%;
+                margin: 0 auto;
+                span.category{
+                    float: right;
+                }
+            }
+            time, span{
+                font-size:15px;
+                color:$midGray;
+            }
+        }
+    }
+    .techvertu-news-content{
+        margin-bottom:10px;
+        h3{
+            font-size: 24px;
+            color:$darkGray;
+            font-weight: bold;
+            line-height: 30px;
+            margin: 10px 0;
+            @include transition;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 100;
+            color: #53575A;
+            line-height: 32px;
+        }
+    }
+    a.read-more{
+        font-size:18px;
+        color:$semiBlack;
+        &:hover{
+            color:$mainSpot;
+        }
+        i{
+            margin-top: 6px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

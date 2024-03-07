@@ -406,6 +406,12 @@ $mobile: 480px;
             width:100%;
         }
     }
+    .techvertu-news-wrapper.archive-news{
+        padding:10px;
+        .techvertu-item-news{
+            width:98% !important;
+        }
+    }
 }
 @media only screen and (max-width: $tablet) {
     .swiper-button-prev{
