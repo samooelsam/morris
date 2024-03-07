@@ -1478,6 +1478,9 @@ html .field-privacy_policy .description a {
   box-sizing: border-box;
   font-size: 15px; }
 
+.elementor-element-edit-mode .swiper-slide {
+  width: 200px; }
+
 /*
 -
 -
