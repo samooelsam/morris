@@ -30,6 +30,7 @@ wp-config.php
 
 # Example themes
 /wp-content/themes/twenty*/
+/wp-content/themes/morris/.sass-cache/*
 
 /wp-content/upgrade/
 /wp-content/upgrade-temp-backup/

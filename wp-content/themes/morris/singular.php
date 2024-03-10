@@ -23,7 +23,7 @@ get_header(); ?>
 							the_post_thumbnail('news-big-thumbnail');
 						}?>
 					</figure>
-					<h3><?php the_title();?></h3>
+					<h1><?php the_title();?></h1>
 					<?php 
 					the_post();
 
