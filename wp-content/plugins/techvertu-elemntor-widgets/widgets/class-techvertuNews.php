@@ -258,7 +258,7 @@ class techvertuNews extends Widget_Base
 							</section>
 							<div class="pagination clearfix">
 								<?php 
-								echo paginate_links( array(
+								$paginateArgs = array(
 									'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
 									'total'        => $the_query->max_num_pages,
 									'current'      => max( 1, get_query_var( 'paged' ) ),
@@ -272,7 +272,8 @@ class techvertuNews extends Widget_Base
 									'next_text'    => sprintf( '%1$s <i class="fi fi-rr-angle-small-right"></i> ', __( '', 'text-domain' ) ),
 									'add_args'     => false,
 									'add_fragment' => '',
-								) );
+								);
+								echo paginate_links( $paginateArgs );
 								?>
 							</div>
 							<?php 

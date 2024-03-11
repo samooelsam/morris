@@ -929,3 +929,128 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp\htdocs\morris\wp-content\themes\morris\woocommerce.php on line 6
 
+2024-03-11T13:55:15+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, string given in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php:279
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php(279): array_map(Object(Closure), '<a class="prev ...')
+#1 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\controls-stack.php(2265): TechvertuCustomWidgets\Widgets\techvertuNews->render()
+#2 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#3 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(750): Elementor\Widget_Base->render_content()
+#4 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Widget_Base->print_content()
+#5 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#6 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#7 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#8 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#9 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1739): Elementor\Element_Base->print_element()
+#10 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1134): Elementor\Core\Base\Document->print_elements(Array)
+#11 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1179): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#12 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1074): Elementor\Frontend->get_builder_content(328)
+#13 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content('<h1>News and ev...')
+#14 C:\xampp\htdocs\morris\wp-includes\plugin.php(205): WP_Hook->apply_filters('<h1>News and ev...', Array)
+#15 C:\xampp\htdocs\morris\wp-includes\post-template.php(256): apply_filters('the_content', '<h1>News and ev...')
+#16 C:\xampp\htdocs\morris\wp-content\themes\morris\page.php(24): the_content()
+#17 C:\xampp\htdocs\morris\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\morris\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\morris\index.php(17): require('C:\\xampp\\htdocs...')
+#20 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php on line 279
+
+2024-03-11T13:55:45+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, string given in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php:279
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php(279): array_map(Object(Closure), '<a class="prev ...')
+#1 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\controls-stack.php(2265): TechvertuCustomWidgets\Widgets\techvertuNews->render()
+#2 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#3 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(750): Elementor\Widget_Base->render_content()
+#4 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Widget_Base->print_content()
+#5 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#6 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#7 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#8 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#9 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1739): Elementor\Element_Base->print_element()
+#10 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1134): Elementor\Core\Base\Document->print_elements(Array)
+#11 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1179): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#12 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1074): Elementor\Frontend->get_builder_content(328)
+#13 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content('<h1>News and ev...')
+#14 C:\xampp\htdocs\morris\wp-includes\plugin.php(205): WP_Hook->apply_filters('<h1>News and ev...', Array)
+#15 C:\xampp\htdocs\morris\wp-includes\post-template.php(256): apply_filters('the_content', '<h1>News and ev...')
+#16 C:\xampp\htdocs\morris\wp-content\themes\morris\page.php(24): the_content()
+#17 C:\xampp\htdocs\morris\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\morris\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\morris\index.php(17): require('C:\\xampp\\htdocs...')
+#20 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php on line 279
+
+2024-03-11T13:56:17+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, string given in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php:279
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php(279): array_map(Object(Closure), '<a class="prev ...')
+#1 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\controls-stack.php(2265): TechvertuCustomWidgets\Widgets\techvertuNews->render()
+#2 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#3 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(750): Elementor\Widget_Base->render_content()
+#4 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Widget_Base->print_content()
+#5 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#6 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#7 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#8 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#9 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1739): Elementor\Element_Base->print_element()
+#10 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1134): Elementor\Core\Base\Document->print_elements(Array)
+#11 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1179): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#12 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1074): Elementor\Frontend->get_builder_content(328)
+#13 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content('<h1>News and ev...')
+#14 C:\xampp\htdocs\morris\wp-includes\plugin.php(205): WP_Hook->apply_filters('<h1>News and ev...', Array)
+#15 C:\xampp\htdocs\morris\wp-includes\post-template.php(256): apply_filters('the_content', '<h1>News and ev...')
+#16 C:\xampp\htdocs\morris\wp-content\themes\morris\page.php(24): the_content()
+#17 C:\xampp\htdocs\morris\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\morris\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\morris\index.php(17): require('C:\\xampp\\htdocs...')
+#20 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php on line 279
+
+2024-03-11T13:57:10+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, string given in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php:279
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php(279): array_map(Object(Closure), '<a class="prev ...')
+#1 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\controls-stack.php(2265): TechvertuCustomWidgets\Widgets\techvertuNews->render()
+#2 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#3 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(750): Elementor\Widget_Base->render_content()
+#4 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Widget_Base->print_content()
+#5 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#6 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#7 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#8 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#9 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1739): Elementor\Element_Base->print_element()
+#10 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1134): Elementor\Core\Base\Document->print_elements(Array)
+#11 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1179): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#12 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1074): Elementor\Frontend->get_builder_content(328)
+#13 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content('<h1>News and ev...')
+#14 C:\xampp\htdocs\morris\wp-includes\plugin.php(205): WP_Hook->apply_filters('<h1>News and ev...', Array)
+#15 C:\xampp\htdocs\morris\wp-includes\post-template.php(256): apply_filters('the_content', '<h1>News and ev...')
+#16 C:\xampp\htdocs\morris\wp-content\themes\morris\page.php(24): the_content()
+#17 C:\xampp\htdocs\morris\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\morris\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\morris\index.php(17): require('C:\\xampp\\htdocs...')
+#20 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php on line 279
+
+2024-03-11T13:58:50+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, string given in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php:279
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php(279): array_map(Object(Closure), '<a class="prev ...')
+#1 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\controls-stack.php(2265): TechvertuCustomWidgets\Widgets\techvertuNews->render()
+#2 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#3 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\widget-base.php(750): Elementor\Widget_Base->render_content()
+#4 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Widget_Base->print_content()
+#5 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#6 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#7 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#8 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#9 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1739): Elementor\Element_Base->print_element()
+#10 C:\xampp\htdocs\morris\wp-content\plugins\elementor\core\base\document.php(1134): Elementor\Core\Base\Document->print_elements(Array)
+#11 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1179): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#12 C:\xampp\htdocs\morris\wp-content\plugins\elementor\includes\frontend.php(1074): Elementor\Frontend->get_builder_content(328)
+#13 C:\xampp\htdocs\morris\wp-includes\class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content('<h1>News and ev...')
+#14 C:\xampp\htdocs\morris\wp-includes\plugin.php(205): WP_Hook->apply_filters('<h1>News and ev...', Array)
+#15 C:\xampp\htdocs\morris\wp-includes\post-template.php(256): apply_filters('the_content', '<h1>News and ev...')
+#16 C:\xampp\htdocs\morris\wp-content\themes\morris\page.php(24): the_content()
+#17 C:\xampp\htdocs\morris\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\morris\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\morris\index.php(17): require('C:\\xampp\\htdocs...')
+#20 {main}
+  thrown in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php on line 279
+
