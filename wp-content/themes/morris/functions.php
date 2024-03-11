@@ -276,3 +276,10 @@ function techvertu_send_enquiry() {
 }
 add_action( 'wp_ajax_techvertu_send_enquiry', 'techvertu_send_enquiry' );    // If called from admin panel
 add_action( 'wp_ajax_nopriv_techvertu_send_enquiry', 'techvertu_send_enquiry' ); 
+
+
+
+add_filter( 'paginate_links', function($link){
+    if(is_paged()){$link= str_replace('page/1/', '', $link);}
+    return $link;
+} );
