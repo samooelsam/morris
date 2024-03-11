@@ -43,7 +43,7 @@
             <div class="column grid_3 footer-column">
                  <h3>Keep in touch</h3>
                 <div class="intouch clearfix">
-                    <p><a href="https://www.morrismachinery.co.uk/contact">Contact</a></p>
+                    <p><a href="https://www.morrismachinery.co.uk/contact/">Contact</a></p>
                 <?php   $tel = get_option('company_tel');
                         $email = get_option('company_email');
                         $address = get_option('company_address');  
