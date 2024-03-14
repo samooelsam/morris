@@ -138,7 +138,7 @@ class techvertuNews extends Widget_Base
 			else{
 				$queryArgs = array(
 					'post_type' => array( 'post' ),
-					'cat'=> $settings['categories'],
+					'category__in'=> $settings['categories'],
 					'paged' => $paged,
 					'orderby' => 'menu_order', 
     				'order' => 'DESC', 
