@@ -1529,3 +1529,25 @@ html .field-privacy_policy{
     width:200px;
   }
 }
+.finance-leasing-box{
+    background-color: #E2FAFF;
+    text-align: center;
+    padding: 14px;
+    border-radius: 15px;
+    margin:70px 0;
+  p{
+    color:$AlternativeSpot;
+    font-size:36px;
+    line-height: 32px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+}

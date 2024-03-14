@@ -1054,3 +1054,20 @@ Stack trace:
 #20 {main}
   thrown in C:\xampp\htdocs\morris\wp-content\plugins\techvertu-elemntor-widgets\widgets\class-techvertuNews.php on line 279
 
+2024-03-14T10:52:30+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_category_parents(), 0 passed in C:\xampp\htdocs\morris\wp-content\themes\morris\woocommerce\content-single-product.php on line 66 and at least 1 expected in C:\xampp\htdocs\morris\wp-includes\category-template.php:47
+Stack trace:
+#0 C:\xampp\htdocs\morris\wp-content\themes\morris\woocommerce\content-single-product.php(66): get_category_parents()
+#1 C:\xampp\htdocs\morris\wp-includes\template.php(792): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\morris\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#3 C:\xampp\htdocs\morris\wp-content\plugins\woocommerce\includes\wc-template-functions.php(983): wc_get_template_part('content', 'single-product')
+#4 C:\xampp\htdocs\morris\wp-content\themes\morris\woocommerce.php(51): woocommerce_content()
+#5 C:\xampp\htdocs\morris\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\morris\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\morris\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\morris\wp-includes\category-template.php on line 47
+
+2024-03-14T11:21:43+00:00 CRITICAL Out of memory (allocated 130023424) (tried to allocate 20480 bytes) in C:\xampp\htdocs\morris\wp-includes\rest-api\endpoints\class-wp-rest-controller.php on line 398
+
+2024-03-14T13:12:25+00:00 CRITICAL Unclosed '{' on line 67 in C:\xampp\htdocs\morris\wp-content\themes\morris\woocommerce\content-single-product.php on line 111
+
