@@ -63,6 +63,20 @@ class techvertuNews extends Widget_Base
 				'default' => __('Title', 'elementor-custombutton'),
 			)
 		);
+		$allCats = get_categories();
+        foreach ($allCats as $key => $value) {
+            $caseOptions[$value->term_id] =  $value->cat_name;
+        }
+        $this->add_control(
+            'categories',
+            [
+                'label' => esc_html__( 'Category', 'morris' ),
+                'type' => \Elementor\Controls_Manager::SELECT2,
+                'multiple' => true,
+                'options' => $caseOptions,
+                'default' => [ 'title' ],
+            ]
+        );
 
 		$this->end_controls_section();
 	}
@@ -70,7 +84,6 @@ class techvertuNews extends Widget_Base
 	protected function render()
 	{
 		$settings = $this->get_settings_for_display();
-		
 		if ($settings) {
 			$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 			if(isset($_POST['submitFilter'])) {
@@ -125,6 +138,7 @@ class techvertuNews extends Widget_Base
 			else{
 				$queryArgs = array(
 					'post_type' => array( 'post' ),
+					'cat'=> $settings['categories'],
 					'paged' => $paged,
 					'orderby' => 'menu_order', 
     				'order' => 'DESC', 
