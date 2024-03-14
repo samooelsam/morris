@@ -142,6 +142,7 @@ class techvertuNews extends Widget_Base
 					'paged' => $paged,
 					'orderby' => 'menu_order', 
     				'order' => 'DESC', 
+					
 				);
 			}?>
 			<div class="techvertu-news-wrapper clearfix">
