@@ -101,7 +101,7 @@ define( 'MORRIS_THEME_VERSION', '1.1.4' );
 
 function morris_landing_scripts()
 {
-    wp_enqueue_style('morris-landing-styles', get_template_directory_uri() . '/css/style.css', array(), '1.1.4', 'all');
+    wp_enqueue_style('morris-landing-styles', get_template_directory_uri() . '/css/style.css', array(), MORRIS_THEME_VERSION, 'all');
     wp_enqueue_script( 'swiperesmb', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array(), MORRIS_THEME_VERSION, 'all');
     wp_enqueue_script('morris-landing-scripts', get_template_directory_uri() . '/js/scripts.js',array(), MORRIS_THEME_VERSION, 'all');
     wp_localize_script( 'morris-landing-scripts', 'frontendajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
