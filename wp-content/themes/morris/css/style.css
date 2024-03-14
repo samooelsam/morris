@@ -1487,16 +1487,18 @@ html .field-privacy_policy .description a {
   text-align: center;
   padding: 14px;
   border-radius: 15px;
-  margin: 70px 0; }
+  max-width: 80%;
+  margin: 70px auto; }
   .finance-leasing-box p {
     color: #008EAA;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 32px;
     font-weight: 700;
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 0;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   .finance-leasing-box i {
     display: inline-block;
     vertical-align: middle;
