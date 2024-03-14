@@ -1482,6 +1482,26 @@ html .field-privacy_policy .description a {
 .elementor-element-edit-mode .swiper-slide {
   width: 200px; }
 
+.finance-leasing-box {
+  background-color: #E2FAFF;
+  text-align: center;
+  padding: 14px;
+  border-radius: 15px;
+  margin: 70px 0; }
+  .finance-leasing-box p {
+    color: #008EAA;
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    text-align: center; }
+  .finance-leasing-box i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; }
+
 /*
 -
 -
