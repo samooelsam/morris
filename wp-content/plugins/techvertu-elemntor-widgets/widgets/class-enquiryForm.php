@@ -136,7 +136,7 @@ class enquiryForm extends Widget_Base
                 <h1><?php _e('Enquire', 'morris');?> <?php echo($productTitle);?></h1>
                 <p></p>
                 <div class="techvertu-enquiry-form clearfix">
-                    <?php
+                    <?php	
                     if($alertMessage) {?>
                         <div class="alert <?php echo($alertColorClass);?>">
                             <p><?php echo($alertMessage);?></p>

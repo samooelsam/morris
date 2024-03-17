@@ -4,9 +4,11 @@
         height: 350px;
         margin-right: 18px;
         padding:20px 0;
+        position: static;
       }
     .swiper-slide  {
         padding:15px;
+        width:260px;
         .team-item-content{
             h3{
                 font-size:23px;

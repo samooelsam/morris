@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN-GB">
 <head>
     <title><?php
                 if (is_home()) {
