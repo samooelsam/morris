@@ -36,7 +36,7 @@ function techvertu_woocommerce_call_to_order_button(){
 	global $product; //get the product object
 	if ( $product && ('' === $product->get_price() || 0 == $product->get_price())) { // if there's a product proceed
 		$url = esc_url( $product->get_permalink() ); //get the permalink to the product
-		echo '<a rel="nofollow" href="' . $url . '" class="button add-to-cart send-inquiry"><i class="fi fi-rr-phone-call"></i>Call to order!</a>'; //display a button that goes to the product page
+		echo '<a href="' . $url . '" class="button add-to-cart send-inquiry"><i class="fi fi-rr-phone-call"></i>Call to order!</a>'; //display a button that goes to the product page
 	}
 }
 add_action('woocommerce_after_shop_loop_item','techvertu_woocommerce_call_to_order_button', 10);

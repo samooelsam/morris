@@ -292,3 +292,9 @@ add_filter( 'woocommerce_single_product_image_thumbnail_html', 'techvertu_remove
 function techvertu_remove_product_link( $html ) {
   return strip_tags( $html, '<div><img>' );
 }
+
+add_filter( 'woocommerce_loop_add_to_cart_args', 'techvertu_remove_rel', 10, 2 );
+function techvertu_remove_rel( $args, $product ) {
+    unset( $args['attributes']['rel'] );
+    return $args;
+}
