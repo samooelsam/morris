@@ -9,7 +9,7 @@
 			<?php get_template_part('includes/productsCategoryBanner', 'widget');?>
 			<figcaption class="image-wrapper clearfix">
 				<div class="centerize grid_12 clearfix">
-					<h3><?php 
+					<h1><?php 
 					if( is_product_category() ) {
 						$thisPage = $wp_query->get_queried_object()->name;
 						
@@ -22,7 +22,7 @@
 						$thisPage = get_post(wc_get_page_id( 'shop' ));
 						
 						echo($thisPage->post_name);
-					}?></h3>
+					}?></h1>
 					<?php 
 					get_template_part('includes/taxDescription', 'widget');
 					if (class_exists('WooCommerce') && is_woocommerce()) :
