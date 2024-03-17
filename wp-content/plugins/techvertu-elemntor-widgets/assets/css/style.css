@@ -867,7 +867,11 @@ a.download-techsheet {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  top: 95%; }
+  top: 95%;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    content: "" !important; }
 
 .swiper-button-prev {
   background-image: url("../images/left-arrow.svg");

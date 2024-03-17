@@ -71,6 +71,11 @@
     height: 50px;
     border-radius: $borderRadiusLight;
     top:95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:after{
+        content: "" !important;
+    }
 }
 .swiper-button-prev{
     background-image: url('../images/left-arrow.svg');
