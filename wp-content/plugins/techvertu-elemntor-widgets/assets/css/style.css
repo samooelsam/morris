@@ -886,7 +886,8 @@ a.download-techsheet {
   .techvertu-teams .swiper {
     height: 350px;
     margin-right: 18px;
-    padding: 20px 0; }
+    padding: 20px 0;
+    position: static; }
   .techvertu-teams .swiper-slide {
     padding: 15px; }
     .techvertu-teams .swiper-slide .team-item-content h3 {
