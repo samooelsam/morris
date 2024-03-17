@@ -19,9 +19,10 @@
 .techvertu-enquiry-form-wrapper{
     display: inline-block;
     vertical-align: top;
-    h3{
+    h3, h1{
         font-size:30px;
         color:$mainSpot;
+        text-transform: uppercase;
     }
     
 }
@@ -33,6 +34,7 @@
         font-size:15px;
         color:chocolate
     }
+    
     .alert.green{
         background-color:$greenAlert;
         color:#fff;
@@ -78,7 +80,7 @@
         }
     }
     .form-sender {
-        span{
+        h1.title-changer{
             display: block;
             font-size:23px;
         }
