@@ -133,7 +133,7 @@ class enquiryForm extends Widget_Base
                 <img src="<?php echo($image[0]);?>" />
             </figure>
             <div class="techvertu-enquiry-form-wrapper grid_6 clearfix">
-                <h3><?php echo($settings['title']);?></h3>
+                <h1><?php _e('Enquire', 'morris');?> <?php echo($productTitle);?></h1>
                 <p></p>
                 <div class="techvertu-enquiry-form clearfix">
                     <?php
@@ -145,7 +145,7 @@ class enquiryForm extends Widget_Base
 					
                     <form action="<?php echo ($_SERVER['REQUEST_URI']); ?>" method="post" id="enquire-form" >
                         <div class="form-sender clearfix">
-                            <label><input type="hidden" name="productTitle" id="productTitle" value="<?php echo($productTitle);?>" ><span class="title-changer"><?php echo($productTitle);?></span></label>
+                            <label><input type="hidden" name="productTitle" id="productTitle" value="<?php echo($productTitle);?>" ></label>
                             <label><input type="hidden" name="productSKU" id="prSKU" value="<?php echo($productSKU);?>" /><span class="sku-changer"><?php _e('SKU', 'morris');?>:<?php echo($productSKU);?></span></label>
                         </div>
 						<div class="form-column grid_2 clearfix">

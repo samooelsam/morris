@@ -2974,9 +2974,10 @@ a.elementor-lost-password {
 .techvertu-enquiry-form-wrapper {
   display: inline-block;
   vertical-align: top; }
-  .techvertu-enquiry-form-wrapper h3 {
+  .techvertu-enquiry-form-wrapper h3, .techvertu-enquiry-form-wrapper h1 {
     font-size: 30px;
-    color: #ED6B06; }
+    color: #ED6B06;
+    text-transform: uppercase; }
 
 .techvertu-product-info-wrapper {
   border-bottom: 1px dashed #DBDBDB; }
@@ -3028,7 +3029,7 @@ a.elementor-lost-password {
   .techvertu-enquiry-form input.contact-submit:disabled {
     background-color: #ebebeb !important;
     cursor: default; }
-.techvertu-enquiry-form .form-sender span {
+.techvertu-enquiry-form .form-sender h1.title-changer {
   display: block;
   font-size: 23px; }
 .techvertu-enquiry-form .form-sender span.sku-changer {
