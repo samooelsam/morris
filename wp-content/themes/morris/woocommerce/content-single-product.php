@@ -54,7 +54,7 @@ if ( post_password_required() ) {
 		$sparePart = get_post_meta(get_the_ID(), 'sparePart', true);?>
 		<?php if ( '' === $product->get_price() || 0 == $product->get_price() || ! $product->is_in_stock() ) { ?>
 			<div class="techvertu-product-buttons clearfix">
-				<a href="<?php echo(home_url('enquire-today'));?>?prID=<?php echo(get_the_ID());?>" class="inquiry-btns main"><?php _e('Enquire TODAY', 'morris');?></a>
+				<a href="<?php echo(home_url('enquire-today'));?>/?prID=<?php echo(get_the_ID());?>" class="inquiry-btns main"><?php _e('Enquire TODAY', 'morris');?></a>
 				<?php if($tech_sheet) {?>
 					<a href="<?php echo($tech_sheet);?>" class="inquiry-btns green"><?php _e('Download tech sheet', 'morris');?></a>
 				<?php } 
