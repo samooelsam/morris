@@ -285,3 +285,10 @@ add_filter( 'paginate_links', function($link){
     if(is_paged()){$link= str_replace('page/1/', '', $link);}
     return $link;
 } );
+
+
+// this code is for removing a tag from gallery and product images
+add_filter( 'woocommerce_single_product_image_thumbnail_html', 'techvertu_remove_product_link' );
+function techvertu_remove_product_link( $html ) {
+  return strip_tags( $html, '<div><img>' );
+}
