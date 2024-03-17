@@ -1265,10 +1265,14 @@ a.back-to-home{
     }
     
   }
-  p{
+  p, li{
     font-size:20px;
     font-family: changa;
     margin-top: 20px;
+  }
+  li{
+    list-style: disc;
+    list-style-position: inside;
   }
   a{
     font-size:20px;
