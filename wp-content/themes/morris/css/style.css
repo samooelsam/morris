@@ -356,6 +356,8 @@ span.search-icn {
     line-height: 30px; }
   .down-footer .techvertu-licence span {
     padding: 11px 0; }
+  .down-footer .techvertu-licence .social-media li a svg {
+    margin-top: 10px; }
   .down-footer .jfh-logo {
     text-align: left;
     float: left; }

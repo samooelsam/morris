@@ -254,8 +254,18 @@ span.search-icn{
       line-height: 30px;
       
     }
+
     span{
       padding: 11px 0;
+    }
+    .social-media{
+      li{
+        a{
+          svg{
+            margin-top:10px;
+          }
+        }
+      }
     }
   }
   .jfh-logo{
