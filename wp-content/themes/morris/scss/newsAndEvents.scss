@@ -111,6 +111,7 @@
             line-height: 30px;
             margin: 10px 0;
             @include transition;
+            text-transform: uppercase;
         }
         p{
             font-size: 18px;

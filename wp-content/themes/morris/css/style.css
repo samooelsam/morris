@@ -3219,7 +3219,8 @@ a.elementor-lost-password {
     -moz-transition: all 0.2s ease-in-out 0s;
     -o-transition: all 0.2s ease-in-out 0s;
     -ms-transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s; }
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    text-transform: uppercase; }
   .techvertu-news-wrapper .techvertu-news-content p {
     font-size: 18px;
     font-weight: 100;
