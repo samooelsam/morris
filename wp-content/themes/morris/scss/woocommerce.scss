@@ -161,6 +161,9 @@
     position: relative;
     overflow: hidden;
     max-height:400px;
+    img{
+        display: block;
+    }
     figcaption{
         position: absolute;
         left:0;
