@@ -10,38 +10,9 @@ if($currentCat->term_id){
             'paged' => $paged,
             'cat' => $currentCat->term_id,
             'order' => 'DESC', 
-        );?>
-        <figure class="image-wrapper woocommerce-banner clearfix">
-			<?php get_template_part('includes/productsCategoryBanner', 'widget');?>
-			<figcaption class="image-wrapper clearfix">
-				<div class="centerize grid_12 clearfix">
-					<h1><?php 
-					if( is_product_category() || is_category()) {
-						$thisPage = $wp_query->get_queried_object()->name;
-						
-						echo($thisPage);
-					}
-					else if($tax){
-						echo($tax->name);
-					}
-					else{
-						$thisPage = get_post(wc_get_page_id( 'shop' ));
-						
-						echo($thisPage->post_name);
-					}?></h1>
-					<?php 
-					get_template_part('includes/taxDescription', 'widget');
-					if (class_exists('WooCommerce') && is_woocommerce()) :
-		
-						woocommerce_breadcrumb(); 
-				
-					endif;
-					?>
-					
-				</div>
-				
-			</figcaption>
-		</figure>
+        );
+        get_template_part('includes/categoryAndWooBanner', 'widget');?>
+       
 			<div class="techvertu-news-wrapper clearfix archive-news">
 				<div class="centerize clearfix">
 					<div class="techvertu-news-container clearfix swiper-container">

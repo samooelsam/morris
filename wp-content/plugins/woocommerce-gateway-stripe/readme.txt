@@ -4,7 +4,7 @@ Tags: credit card, stripe, apple pay, payment request, google pay, sepa, bancont
 Requires at least: 6.1
 Tested up to: 6.4.2
 Requires PHP: 7.4
-Stable tag: 7.9.1
+Stable tag: 8.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Attributions: thorsten-stripe
@@ -128,7 +128,8 @@ If you get stuck, you can ask for help in the Plugin Forum.
 
 == Changelog ==
 
-= 7.9.1 - 2024-01-16 =
-* Fix - PHP fatal error when updating a user with saved tokens from the WP Dashboard.
+= 8.1.1 - 2024-04-04 =
+* Fix - Do not hide PRB on cart and product page when there are required custom checkout fields.
+* Fix - Issue with subscription renewal when the `start_date` of the mandate is set in the past.
 
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/woocommerce-gateway-stripe/trunk/changelog.txt).

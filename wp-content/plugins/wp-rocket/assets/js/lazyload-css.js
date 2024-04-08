@@ -3,7 +3,7 @@ function rocket_css_lazyload_launch() {
 	const usable_pairs = typeof rocket_pairs === 'undefined' ? [] : rocket_pairs;
 
 
-	const styleElement = document.querySelector('#wpr-lazyload-bg');
+	const styleElement = document.querySelector('#wpr-lazyload-bg-container');
 
 	const threshold = rocket_lazyload_css_data.threshold || 300;
 
@@ -13,11 +13,12 @@ function rocket_css_lazyload_launch() {
 				const pairs = usable_pairs.filter(s => entry.target.matches(s.selector));
 				pairs.map(pair => {
 					if (pair) {
-						styleElement.innerHTML += pair.style;
+						styleElement.innerHTML += `<style>${pair.style}</style>`;
+
 						pair.elements.forEach(el => {
-							el.setAttribute('data-rocket-lazy-bg', 'loaded');
 							// Stop observing the target element
 							observer.unobserve(el);
+							el.setAttribute(`data-rocket-lazy-bg-${pair.hash}`, 'loaded');
 						});
 					}
 				})
@@ -29,7 +30,7 @@ function rocket_css_lazyload_launch() {
 
 	function lazyload(e = []) {
 
-		const pass = e.length === 0 || e.find(e =>  e.type !== 'attributes' || e.attributeName === 'class');
+		const pass = e.length > 0;
 
 		if(! pass ) {
 			return;
@@ -40,7 +41,7 @@ function rocket_css_lazyload_launch() {
 
 				const elements = document.querySelectorAll(pair.selector);
 				elements.forEach(el => {
-					if(el.getAttribute('data-rocket-lazy-bg') === 'loaded') {
+					if(el.getAttribute(`data-rocket-lazy-bg-${pair.hash}`) === 'loaded') {
 						return;
 					}
 					observer.observe(el);
