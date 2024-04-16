@@ -964,6 +964,11 @@ html .elementor-form-fields-wrapper{
     font-weight: 300;
     line-height: 35px;
     color:$darkGray;
+    a{
+      font-size:20px;
+      font-family: changa;
+      font-weight: 300;
+    }
   }
   ol, ul{
     li{
@@ -975,6 +980,13 @@ html .elementor-form-fields-wrapper{
       font-family: changa;
       line-height: 35px;
       font-weight: 300;
+    }
+  }
+  ol{
+    li{
+      background: none;
+      list-style: decimal;
+      list-style-position: inside;
     }
   }
 }

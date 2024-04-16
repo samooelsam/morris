@@ -46,12 +46,26 @@ class UR_Form_Field_Checkbox extends UR_Form_Field {
 		);
 
 		$this->field_defaults = array(
-			'default_label'      => esc_html__( 'Checkbox', 'user-registration' ),
-			'default_field_name' => 'check_box_' . ur_get_random_number(),
-			'default_options'    => array(
+			'default_label'         => esc_html__( 'Checkbox', 'user-registration' ),
+			'default_field_name'    => 'check_box_' . ur_get_random_number(),
+			'default_options'       => array(
 				esc_html__( 'First Choice', 'user-registration' ),
 				esc_html__( 'Second Choice', 'user-registration' ),
 				esc_html__( 'Third Choice', 'user-registration' ),
+			),
+			'default_image_options' => array(
+				array(
+					'label' => __( 'First Choice', 'user-registration' ),
+					'image' => '',
+				),
+				array(
+					'label' => __( 'Second Choice', 'user-registration' ),
+					'image' => '',
+				),
+				array(
+					'label' => __( 'Third Choice', 'user-registration' ),
+					'image' => '',
+				),
 			),
 		);
 	}
@@ -92,7 +106,7 @@ class UR_Form_Field_Checkbox extends UR_Form_Field {
 				add_filter(
 					$filter_hook,
 					function ( $msg ) use ( $field_label, $message ) {
-						if ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX || ! ur_option_checked( 'user_registration_ajax_form_submission_on_edit_profile', false ) ) {
+						if ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX && ! ur_option_checked( 'user_registration_ajax_form_submission_on_edit_profile', false ) ) {
 							return sprintf( $message[ $field_label ] );
 						} else {
 							wp_send_json_error(

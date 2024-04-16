@@ -65,6 +65,9 @@ class CLIRunner {
 		WP_CLI::add_command( 'wc cot enable', array( $this, 'enable' ) );
 		WP_CLI::add_command( 'wc cot disable', array( $this, 'disable' ) );
 		WP_CLI::add_command( 'wc hpos cleanup', array( $this, 'cleanup_post_data' ) );
+		WP_CLI::add_command( 'wc hpos status', array( $this, 'status' ) );
+		WP_CLI::add_command( 'wc hpos diff', array( $this, 'diff' ) );
+		WP_CLI::add_command( 'wc hpos backfill', array( $this, 'backfill' ) );
 	}
 
 	/**
@@ -260,7 +263,7 @@ class CLIRunner {
 	 * ## EXAMPLES
 	 *
 	 *     # Copy all order data into the post meta table, 500 posts at a time.
-	 *     wp wc cot backfill --batch-size=500
+	 *     wp wc cot migrate --batch-size=500
 	 *
 	 * @param array $args Positional arguments passed to the command.
 	 * @param array $assoc_args Associative arguments (options) passed to the command.
@@ -583,11 +586,7 @@ class CLIRunner {
 	 * @return array Failed IDs with meta details.
 	 */
 	private function verify_meta_data( array $order_ids, array $failed_ids ) : array {
-		$meta_keys_to_ignore = array(
-			'_paid_date', // This has been deprecated and replaced by '_date_paid' in the CPT datastore.
-			'_completed_date', // This has been deprecated and replaced by '_date_completed' in the CPT datastore.
-			'_edit_lock',
-		);
+		$meta_keys_to_ignore = $this->synchronizer->get_ignored_order_props();
 
 		global $wpdb;
 		if ( ! count( $order_ids ) ) {
@@ -955,6 +954,190 @@ ORDER BY $meta_table.order_id ASC, $meta_table.meta_key ASC;
 				// translators: %d is the number of orders that were cleaned up.
 				_n( 'Cleanup completed for %d order.', 'Cleanup completed for %d orders.', $count, 'woocommerce' ),
 				$count
+			)
+		);
+	}
+
+	/**
+	 * Displays a summary of HPOS situation on this site.
+	 *
+	 * @since 8.6.0
+	 *
+	 * @param array $args       Positional arguments passed to the command.
+	 * @param array $assoc_args Associative arguments (options) passed to the command.
+	 */
+	public function status( array $args = array(), array $assoc_args = array() ) {
+		$legacy_handler = wc_get_container()->get( LegacyDataHandler::class );
+
+		// translators: %s is either 'yes' or 'no'.
+		WP_CLI::log( sprintf( __( 'HPOS enabled?: %s', 'woocommerce' ), wc_bool_to_string( $this->controller->custom_orders_table_usage_is_enabled() ) ) );
+
+		// translators: %s is either 'yes' or 'no'.
+		WP_CLI::log( sprintf( __( 'Compatibility mode enabled?: %s', 'woocommerce' ), wc_bool_to_string( $this->synchronizer->data_sync_is_enabled() ) ) );
+
+		// translators: %d is an order count.
+		WP_CLI::log( sprintf( __( 'Unsynced orders: %d', 'woocommerce' ), $this->synchronizer->get_current_orders_pending_sync_count() ) );
+
+		WP_CLI::log(
+			sprintf(
+				/* translators: %d is an order count. */
+				__( 'Orders subject to cleanup: %d', 'woocommerce' ),
+				( $this->synchronizer->custom_orders_table_is_authoritative() && ! $this->synchronizer->data_sync_is_enabled() )
+				? $legacy_handler->count_orders_for_cleanup()
+				: 0
+			)
+		);
+	}
+
+	/**
+	 * Displays differences for an order between the HPOS and post datastore.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <order_id>
+	 * :The ID of the order.
+	 *
+	 * [--format=<format>]
+	 * : Render output in a particular format.
+	 * ---
+	 * default: table
+	 * options:
+	 *   - table
+	 *   - csv
+	 *   - json
+	 *   - yaml
+	 * ---
+	 *
+	 * ## EXAMPLES
+	 *
+	 *    # Find differences between datastores for order 123.
+	 *    $ wp wc hpos diff 123
+	 *
+	 *    # Find differences for order 123 and display as CSV.
+	 *    $ wp wc hpos diff 123 --format=csv
+	 *
+	 * @since 8.6.0
+	 *
+	 * @param array $args       Positional arguments passed to the command.
+	 * @param array $assoc_args Associative arguments (options) passed to the command.
+	 */
+	public function diff( array $args = array(), array $assoc_args = array() ) {
+		$id = absint( $args[0] );
+
+		try {
+			$diff = wc_get_container()->get( LegacyDataHandler::class )->get_diff_for_order( $id );
+		} catch ( \Exception $e ) {
+			// translators: %1$d is an order ID, %2$s is an error message.
+			WP_CLI::error( sprintf( __( 'An error occurred while computing a diff for order %1$d: %2$s', 'woocommerce' ), $id, $e->getMessage() ) );
+		}
+
+		if ( ! $diff ) {
+			WP_CLI::success( __( 'No differences found.', 'woocommerce' ) );
+			return;
+		}
+
+		// Format the diff array.
+		$diff = array_map(
+			function( $key, $hpos_value, $cpt_value ) {
+				// Format for dates.
+				$hpos_value = is_a( $hpos_value, \WC_DateTime::class ) ? $hpos_value->format( DATE_ATOM ) : $hpos_value;
+				$cpt_value  = is_a( $cpt_value, \WC_DateTime::class ) ? $cpt_value->format( DATE_ATOM ) : $cpt_value;
+
+				return array(
+					'property' => $key,
+					'hpos'     => $hpos_value,
+					'post'     => $cpt_value,
+				);
+			},
+			array_keys( $diff ),
+			array_column( $diff, 0 ),
+			array_column( $diff, 1 ),
+		);
+
+		WP_CLI::warning(
+			// translators: %d is an order ID.
+			sprintf( __( 'Differences found for order %d:', 'woocommerce' ), $id )
+		);
+		WP_CLI\Utils\format_items(
+			$assoc_args['format'] ?? 'table',
+			$diff,
+			array( 'property', 'hpos', 'post' )
+		);
+	}
+
+	/**
+	 * Backfills an order from either the HPOS or the posts datastore.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <order_id>
+	 * : The ID of the order.
+	 *
+	 * --from=<datastore>
+	 * : Source datastore. Either 'hpos' or 'posts'.
+	 * ---
+	 * options:
+	 *   - hpos
+	 *   - posts
+	 * ---
+	 *
+	 * --to=<datastore>
+	 * : Destination datastore. Either 'hpos' or 'posts'.
+	 * ---
+	 * options:
+	 *   - hpos
+	 *   - posts
+	 * ---
+	 *
+	 * @since 8.6.0
+	 *
+	 * @param array $args       Positional arguments passed to the command.
+	 * @param array $assoc_args Associative arguments (options) passed to the command.
+	 */
+	public function backfill( array $args = array(), array $assoc_args = array() ) {
+		$legacy_handler = wc_get_container()->get( LegacyDataHandler::class );
+
+		$from     = $assoc_args['from'] ?? '';
+		$to       = $assoc_args['to'] ?? '';
+		$order_id = absint( $args[0] );
+
+		if ( ! $order_id ) {
+			WP_CLI::error( __( 'Please provide a valid order ID.', 'woocommerce' ) );
+		}
+
+		foreach ( array( 'from', 'to' ) as $datastore ) {
+			if ( ! in_array( ${"$datastore"}, array( 'posts', 'hpos' ), true ) ) {
+				// translators: %s is a shell argument representing a datastore name.
+				WP_CLI::error( sprintf( __( '\'%s\' is not a valid datastore.', 'woocommerce' ), ${"$datastore"} ) );
+			}
+		}
+
+		if ( $from === $to ) {
+			WP_CLI::error( __( 'Please use different source (--from) and destination (--to) datastores.', 'woocommerce' ) );
+		}
+
+		try {
+			$legacy_handler->backfill_order_to_datastore( $order_id, $from, $to );
+		} catch ( \Exception $e ) {
+			WP_CLI::error(
+				sprintf(
+					// translators: %1$d is an order ID, %2$s and %3$s are datastore names, %4$s is an error message.
+					__( 'An error occurred while backfilling order %1$d from %2$s to %3$s: %4$s', 'woocommerce' ),
+					$order_id,
+					$from,
+					$to,
+					$e->getMessage()
+				)
+			);
+		}
+
+		WP_CLI::success(
+			sprintf(
+				// translators: %1$d is an order ID, %2$s and %3$s are datastore names ("hpos" or "posts" for example).
+				__( 'Order %1$d backfilled from %2$s to %3$s.', 'woocommerce' ),
+				$order_id,
+				$from,
+				$to
 			)
 		);
 	}

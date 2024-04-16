@@ -113,7 +113,17 @@ class generatorGuide extends Widget_Base
 				'default' => __('Contact Title', 'elementor-custombutton'),
 			)
 		);
-
+		$this->add_control(
+			'video',
+			[
+				'label' => esc_html__( 'Choose Video File', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'media_types' => [ 'video' ],
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+			]
+		);
 		
 		$this->add_control(
 			'list',

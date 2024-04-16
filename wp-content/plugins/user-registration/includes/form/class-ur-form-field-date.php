@@ -99,7 +99,7 @@ class UR_Form_Field_Date extends UR_Form_Field {
 					add_filter(
 						$filter_hook,
 						function ( $msg ) use ( $field_label, $message ) {
-							if ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX || ! ur_option_checked( 'user_registration_ajax_form_submission_on_edit_profile', false ) ) {
+							if ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX && ! ur_option_checked( 'user_registration_ajax_form_submission_on_edit_profile', false ) ) {
 								return sprintf( $message[ $field_label ] );
 							} else {
 								wp_send_json_error(
@@ -174,7 +174,7 @@ class UR_Form_Field_Date extends UR_Form_Field {
 	 * @return void
 	 */
 	private function validate_min_date( $date, $min_date, $filter_hook, $field_label ) {
-		$date_timestamp     = strtotime( $date );
+		$date_timestamp     = strtotime( str_replace( '/', '-', $date ) );
 		$min_date_timestamp = strtotime( $min_date );
 
 		if ( $date_timestamp < $min_date_timestamp ) {
@@ -210,7 +210,7 @@ class UR_Form_Field_Date extends UR_Form_Field {
 	 * @return void
 	 */
 	private function validate_max_date( $date, $max_date, $filter_hook, $field_label ) {
-		$date_timestamp     = strtotime( $date );
+		$date_timestamp     = strtotime( str_replace( '/', '-', $date ) );
 		$max_date_timestamp = strtotime( $max_date );
 
 		if ( $date_timestamp > $max_date_timestamp ) {

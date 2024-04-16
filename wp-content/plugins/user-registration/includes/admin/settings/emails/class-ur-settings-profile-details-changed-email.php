@@ -16,6 +16,26 @@ if ( ! class_exists( 'UR_Settings_Profile_Details_Changed_Email', false ) ) :
 	 * UR_Settings_Profile_Details_Changed_Email Class.
 	 */
 	class UR_Settings_Profile_Details_Changed_Email {
+		/**
+		 * UR_Settings_Profile_Details_Changed_Email Id.
+		 *
+		 * @var string
+		 */
+		public $id;
+
+		/**
+		 * UR_Settings_Profile_Details_Changed_Email Title.
+		 *
+		 * @var string
+		 */
+		public $title;
+
+		/**
+		 * UR_Settings_Profile_Details_Changed_Email Description.
+		 *
+		 * @var string
+		 */
+		public $description;
 
 		/**
 		 * Constructor.
@@ -33,6 +53,11 @@ if ( ! class_exists( 'UR_Settings_Profile_Details_Changed_Email', false ) ) :
 		 */
 		public function get_settings() {
 
+			/**
+			 * Filter to add the options on settings.
+			 *
+			 * @param array Options to be enlisted.
+			 */
 			$settings = apply_filters(
 				'user_registration_profile_details_changed_email',
 				array(
@@ -90,6 +115,11 @@ if ( ! class_exists( 'UR_Settings_Profile_Details_Changed_Email', false ) ) :
 				)
 			);
 
+			/**
+			 * Filter to get the settings.
+			 *
+			 * @param array $settings Setting options to be enlisted.
+			 */
 			return apply_filters( 'user_registration_get_settings_' . $this->id, $settings );
 		}
 
@@ -100,6 +130,11 @@ if ( ! class_exists( 'UR_Settings_Profile_Details_Changed_Email', false ) ) :
 		 */
 		public function ur_get_profile_details_changed_email() {
 
+			/**
+			 * Filter to modify the message content for profile details changed.
+			 *
+			 * @return string $message Message content for profile details changed email to be overridden.
+			 */
 			$message = apply_filters(
 				'user_registration_profile_details_changed_email_message',
 				sprintf(

@@ -16,6 +16,26 @@ if ( ! class_exists( 'UR_Settings_Approval_Link_Email', false ) ) :
 	 * UR_Settings_Approval_Link_Email Class.
 	 */
 	class UR_Settings_Approval_Link_Email {
+		/**
+		 * UR_Settings_Approval_Link_Email Id.
+		 *
+		 * @var string
+		 */
+		public $id;
+
+		/**
+		 * UR_Settings_Approval_Link_Email Title.
+		 *
+		 * @var string
+		 */
+		public $title;
+
+		/**
+		 * UR_Settings_Approval_Link_Email Description.
+		 *
+		 * @var string
+		 */
+		public $description;
 
 		/**
 		 * Constructor.
@@ -32,7 +52,11 @@ if ( ! class_exists( 'UR_Settings_Approval_Link_Email', false ) ) :
 		 * @return array
 		 */
 		public function get_settings() {
-
+			/**
+			 * Filter to add the options on settings.
+			 *
+			 * @param array Options to be enlisted.
+			 */
 			$settings = apply_filters(
 				'user_registration_approval_link_email',
 				array(
@@ -90,11 +114,18 @@ if ( ! class_exists( 'UR_Settings_Approval_Link_Email', false ) ) :
 				)
 			);
 
+			/**
+			 * Filter to get the settings.
+			 *
+			 * @param array $settings Setting options to be enlisted.
+			 */
 			return apply_filters( 'user_registration_get_settings_' . $this->id, $settings );
 		}
 
 		/**
-		 * Email format.
+		 * Email format for approval link in email.
+		 *
+		 * @return string $approval_msg Message content for approval link in email.
 		 */
 		public function ur_get_approval_link_email() {
 			$approval_msg = sprintf(
@@ -105,12 +136,18 @@ if ( ! class_exists( 'UR_Settings_Approval_Link_Email', false ) ) :
 
 					Please review the user role and details at \'<b>Users</b>\' menu in your WP dashboard. <br/><br />
 
-					Click on this link to approve this user directly :  {{approval_link}} <br /><br />
+					Click on this link to approve this user directly :  {{approval_link}} <br />
+					Click on this link to deny this user directly :  {{denial_link}} <br /><br />
 					Thank You!',
 					'user-registration'
 				)
 			);
 
+			/**
+			 * Filter to modify the approval email message email content.
+			 *
+			 * @param string $approval_msg Message content to be overridden for admin approval email.
+			 */
 			$approval_msg = apply_filters( 'user_registration_admin_approval_email_message', $approval_msg );
 
 			return $approval_msg;

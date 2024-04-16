@@ -995,6 +995,10 @@ html .elementor-form-fields-wrapper .elementor-button {
   font-weight: 300;
   line-height: 35px;
   color: #53575A; }
+  .techvertu-content-box p a {
+    font-size: 20px;
+    font-family: changa;
+    font-weight: 300; }
 .techvertu-content-box ol li, .techvertu-content-box ul li {
   padding-left: 20px;
   background: url("../img/fi-rr-checkbox.svg") no-repeat 0 11px;
@@ -1004,6 +1008,10 @@ html .elementor-form-fields-wrapper .elementor-button {
   font-family: changa;
   line-height: 35px;
   font-weight: 300; }
+.techvertu-content-box ol li {
+  background: none;
+  list-style: decimal;
+  list-style-position: inside; }
 
 .speak-to-experts {
   border: 1px solid #D8DADF;

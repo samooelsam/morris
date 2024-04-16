@@ -99,7 +99,7 @@ jQuery( function( $ ) {
 			var data     = {
 				_wpnonce:                  wc_stripe_payment_request_params.nonce.checkout,
 				billing_first_name:        name?.split( ' ' )?.slice( 0, 1 )?.join( ' ' ) ?? '',
-				billing_last_name:         name?.split( ' ' )?.slice( 1 )?.join( ' ' ) ?? '',
+				billing_last_name:         name?.split( ' ' )?.slice( 1 )?.join( ' ' ) || '-',
 				billing_company:           '',
 				billing_email:             null !== email   ? email : evt.payerEmail,
 				billing_phone:             null !== phone   ? phone : evt.payerPhone && evt.payerPhone.replace( '/[() -]/g', '' ),
@@ -137,6 +137,43 @@ jQuery( function( $ ) {
 				data.shipping_city       = shipping.city;
 				data.shipping_state      = shipping.region;
 				data.shipping_postcode   = shipping.postalCode;
+			}
+
+			data = wc_stripe_payment_request.getRequiredFieldDataFromCheckoutForm( data );
+
+			return data;
+		},
+
+		/**
+		 * Get required field values from the checkout form if they are filled and add to the order data.
+		 *
+		 * @param {Object} data Order data.
+		 *
+		 * @return {Object}
+		 */
+		getRequiredFieldDataFromCheckoutForm: function( data ) {
+			const requiredfields = $( 'form.checkout' ).find( '.validate-required' );
+
+			if ( requiredfields.length ) {
+				requiredfields.each( function() {
+					const field = $( this ).find( ':input' );
+					const value = field.val();
+					const name = field.attr( 'name' );
+					if ( value && name ) {
+						if ( ! data[ name ] ) {
+							data[ name ] = value;
+						}
+	
+						// if shipping same as billing is selected, copy the billing field to shipping field.
+						const shipToDiffAddress = $( '#ship-to-different-address' ).find( 'input' ).is( ':checked' );
+						if ( ! shipToDiffAddress ) {
+							var shippingFieldName = name.replace( 'billing_', 'shipping_' );
+							if ( ! data[ shippingFieldName ] && data[ name ] ) {
+								data[ shippingFieldName ] = data[ name ];
+							}
+						}
+					}
+				});
 			}
 
 			return data;

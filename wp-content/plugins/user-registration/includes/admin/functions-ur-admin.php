@@ -101,6 +101,7 @@ function ur_get_screen_ids() {
 	$screen_ids   = array(
 		'toplevel_page_' . $ur_screen_id,
 		$ur_screen_id . '_page_user-registration-dashboard',
+		$ur_screen_id . '_page_user-registration-analytics',
 		$ur_screen_id . '_page_add-new-registration',
 		$ur_screen_id . '_page_user-registration-settings',
 		$ur_screen_id . '_page_user-registration-mailchimp',
@@ -113,6 +114,11 @@ function ur_get_screen_ids() {
 		'user-edit',
 	);
 
+	/**
+	 * Filter to modify screen id's
+	 *
+	 * @param string $screen_ids Screen ID's
+	 */
 	return apply_filters( 'user_registration_screen_ids', $screen_ids );
 }
 
@@ -304,6 +310,13 @@ function ur_create_page( $slug, $option = '', $page_title = '', $page_content = 
 		$valid_page_found = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_type='page' AND post_status NOT IN ( 'pending', 'trash', 'future', 'auto-draft' )  AND post_name = %s LIMIT 1;", $slug ) );
 	}
 
+	/**
+	 * Filter to create Page ID
+	 *
+	 * @param string $valid_page_found Valid Page
+	 * @param mixed $slug Page Slug
+	 * @param string $page_content Page Content
+	 */
 	$valid_page_found = apply_filters( 'user_registration_create_page_id', $valid_page_found, $slug, $page_content );
 
 	if ( $valid_page_found ) {
@@ -439,6 +452,13 @@ function ur_update_form_settings( $setting_data, $form_id ) {
 		}
 	}
 
+	/**
+	 * Filter to modify Form settings save
+	 *
+	 * @param array General Form Settings
+	 * @param mixed $form_id Form ID
+	 * @param string $setting_data Setting Data
+	 */
 	$setting_fields = apply_filters( 'user_registration_form_settings_save', ur_admin_form_settings_fields( $form_id ), $form_id, $setting_data );
 
 	foreach ( $setting_fields as $field_data ) {
@@ -497,6 +517,11 @@ function ur_format_setting_data( $setting_data ) {
 	foreach ( $key_value as $key => $value ) {
 		$settings[] = array(
 			'name'  => $key,
+			/**
+			 * Filter to modify Form settings based on Key
+			 *
+			 * @param array $value Setting Data
+			 */
 			'value' => apply_filters( 'user_registration_form_setting_' . $key, $value ),
 		);
 	}
@@ -600,7 +625,7 @@ function promotional_notice_links( $notice_type, $notice_target_link = '#' ) {
 			<li><a class="button button-primary" href="<?php echo esc_url( $notice_target_link ); ?>" target="_blank"><span class="dashicons dashicons-external"></span><?php esc_html_e( 'Sure, I\'d love to!', 'user-registration' ); ?></a></li>
 			<li><a href="#" class="button button-secondary notice-dismiss notice-dismiss-permanently"><span  class="dashicons dashicons-smiley"></span><?php esc_html_e( 'I already did!', 'user-registration' ); ?></a></li>
 			<li><a href="#" class="button button-secondary notice-dismiss notice-dismiss-temporarily"><span class="dashicons dashicons-dismiss"></span><?php esc_html_e( 'Maybe later', 'user-registration' ); ?></a></li>
-			<li><a href="https://wpeverest.com/support-ticket/" class="button button-secondary notice-have-query" target="_blank"><span class="dashicons dashicons-testimonial"></span><?php esc_html_e( 'I have a query', 'user-registration' ); ?></a></li>
+			<li><a href="https://wpuserregistration.com/support" class="button button-secondary notice-have-query" target="_blank"><span class="dashicons dashicons-testimonial"></span><?php esc_html_e( 'I have a query', 'user-registration' ); ?></a></li>
 		</ul>
 		<a href="#" class="notice-dismiss notice-dismiss-permanently"><?php esc_html_e( 'Never show again', 'user-registration' ); ?></a>
 		<?php

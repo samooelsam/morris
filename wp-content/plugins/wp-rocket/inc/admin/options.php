@@ -92,6 +92,9 @@ function rocket_pre_main_option( $newvalue, $oldvalue ) {
 		'cdn_reject_files'    => __( 'Exclude files from CDN', 'rocket' ),
 	];
 
+	// unset the *_mask value as we don't need to save them.
+	unset( $newvalue['cloudflare_api_key_mask'], $newvalue['cloudflare_zone_id_mask'] );
+
 	foreach ( $pattern_labels as $pattern_field => $label ) {
 		if ( empty( $newvalue[ $pattern_field ] ) ) {
 			// The field is empty.
@@ -104,7 +107,7 @@ function rocket_pre_main_option( $newvalue, $oldvalue ) {
 		// Validate.
 		$newvalue[ $pattern_field ] = array_filter(
 			$newvalue[ $pattern_field ],
-			function( $excluded ) use ( $pattern_field, $label, $is_form_submit, &$errors ) {
+			function ( $excluded ) use ( $pattern_field, $label, $is_form_submit, &$errors ) {
 				if ( false === @preg_match( '#' . str_replace( '#', '\#', $excluded ) . '#', 'dummy-sample' ) && $is_form_submit ) { // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
 					/* translators: 1 and 2 can be anything. */
 					$errors[ $pattern_field ][] = sprintf( __( '%1$s: <em>%2$s</em>', 'rocket' ), $label, esc_html( $excluded ) );
@@ -154,7 +157,7 @@ function rocket_pre_main_option( $newvalue, $oldvalue ) {
 	}
 
 	// Regenerate the minify key if JS files have been modified.
-	// phpcs:ignore WordPress.PHP.StrictComparisons.LooseComparison
+	// phpcs:ignore Universal.Operators.StrictComparisons.LooseNotEqual
 	if ( ( isset( $newvalue['minify_js'], $oldvalue['minify_js'] ) && $newvalue['minify_js'] != $oldvalue['minify_js'] )
 		|| ( isset( $newvalue['exclude_js'], $oldvalue['exclude_js'] ) && $newvalue['exclude_js'] !== $oldvalue['exclude_js'] )
 		|| ( isset( $oldvalue['cdn'] ) && ! isset( $newvalue['cdn'] ) || ! isset( $oldvalue['cdn'] ) && isset( $newvalue['cdn'] ) )

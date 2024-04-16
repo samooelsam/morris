@@ -68,16 +68,19 @@ class Wp_Hide_Backed_Notices_Admin {
     }
 
     public function warning_notices_settings() {
-        if (isset($_POST['save_notice_box'])) {
-            $roles = wp_roles()->get_names();
-            foreach ($roles as $role_val => $role) {
-                if (empty($_POST['hide_notice'][$role_val])) {
-                    $_POST['hide_notice'][$role_val] = "All Users";
+        if (isset($_POST['save_settings_nonce_field']) && wp_verify_nonce($_POST['save_settings_nonce_field'], 'save_settings_nonce')) {
+
+            if (isset($_POST['save_notice_box'])) {
+                $roles = wp_roles()->get_names();
+                foreach ($roles as $role_val => $role) {
+                    if (empty($_POST['hide_notice'][$role_val])) {
+                        $_POST['hide_notice'][$role_val] = "All Users";
+                    }
                 }
+                $manage_warnings_notice = serialize($_POST['hide_notice']);
+                update_option('manage_warnings_notice', $manage_warnings_notice);
+                echo "<meta http-equiv='refresh' content='0'>";
             }
-            $manage_warnings_notice = serialize($_POST['hide_notice']);
-            update_option('manage_warnings_notice', $manage_warnings_notice);
-            echo "<meta http-equiv='refresh' content='0'>";
         }
 
         $custom_post_data = get_option('manage_warnings_notice');
@@ -103,9 +106,11 @@ class Wp_Hide_Backed_Notices_Admin {
                 <?php
                 $roles = '';
                 $roles_dis = 'none';
-                if ($_GET['tab'] == 'roles') {
-                    $roles = 'active';
-                    $roles_dis = 'block';
+                if (isset($_GET['tab'])) {
+                    if ($_GET['tab'] == 'roles') {
+                        $roles = 'active';
+                        $roles_dis = 'block';
+                    }
                 }
                 ?>
                 <button class="hide-tablinks-notices <?php echo $roles; ?>" onclick="openSettings(event, 'User-roles', 'roles')">
@@ -115,9 +120,11 @@ class Wp_Hide_Backed_Notices_Admin {
                 <?php
                 $notifications = '';
                 $notifications_dis = 'none';
-                if ($_GET['tab'] == 'notifications') {
-                    $notifications = 'active';
-                    $notifications_dis = 'block';
+                if (isset($_GET['tab'])) {
+                    if ($_GET['tab'] == 'notifications') {
+                        $notifications = 'active';
+                        $notifications_dis = 'block';
+                    }
                 }
                 ?>
                 <button class="hide-tablinks-notices <?php echo $notifications; ?>" onclick="openSettings(event, 'Notifications', 'notifications')">
@@ -126,6 +133,7 @@ class Wp_Hide_Backed_Notices_Admin {
                 </button>
             </div>
             <form method="POST" class="gallery_meta_form" id="gallery_meta_form_id">
+                <?php wp_nonce_field('save_settings_nonce', 'save_settings_nonce_field'); ?>
                 <div id="Settings" class="hide-tabcontent-notices" style="display: <?php echo $settings_dis; ?>;">
                     <h3>Select what you want to hide</h3>
                     <div class="outer-gallery-box">
