@@ -2585,7 +2585,10 @@ a.back-to-shop {
   margin: 0 auto; }
 
 .woocommerce table.shop_table td {
-  font-family: changa; }
+  font-family: changa;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0; }
 
 .woocommerce form .form-row label {
   font-size: 17px; }
