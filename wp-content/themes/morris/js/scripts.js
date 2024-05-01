@@ -279,7 +279,7 @@ jQuery(document).ready(function(){
         jQuery('.techvertu-enquiry-form').prepend('<div class="alert red"><p>All fields are required. Please fill out all fields</p></div>');
     }
     function techvertu_mobile_number_tester(mobileNumber) {
-        var regex = /\+[0-9]{12}/;
+        var regex = /\^(?:(?:\(?(?:0(?:0|11)\)?[\s-]?\(?|\+)44\)?[\s-]?(?:\(?0\)?[\s-]?)?)|(?:\(?0))(?:(?:\d{5}\)?[\s-]?\d{4,5})|(?:\d{4}\)?[\s-]?(?:\d{5}|\d{3}[\s-]?\d{3}))|(?:\d{3}\)?[\s-]?\d{3}[\s-]?\d{3,4})|(?:\d{2}\)?[\s-]?\d{4}[\s-]?\d{4}))(?:[\s-]?(?:x|ext\.?|\#)\d{3,4})?$/;
         var result = regex.test(mobileNumber);
         return result;
     }
