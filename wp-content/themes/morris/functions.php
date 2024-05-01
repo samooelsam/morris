@@ -163,9 +163,9 @@ add_filter( 'wpseo_breadcrumb_links', function( $links ) {
     return $links;
 } );
 
-add_filter( 'woocommerce_account_menu_items', 'bbloomer_remove_address_my_account', 9999 );
+add_filter( 'woocommerce_account_menu_items', 'techvertu_remove_address_my_account', 9999 );
  
-function bbloomer_remove_address_my_account( $items ) {
+function techvertu_remove_address_my_account( $items ) {
    unset( $items['customer-logout'] );
    unset( $items['downloads'] );
    return $items;
@@ -188,9 +188,9 @@ function techvertu_wpseo_remove_breadcrumb_link( $link_output , $link ){
     return $link_output;
 }
 
-add_action( 'woocommerce_email_before_order_table', 'add_payment_method_to_admin_new_order', 15, 2 );
+add_action( 'woocommerce_email_before_order_table', 'techvertu_add_payment_method_to_admin_new_order', 15, 2 );
 
-function add_payment_method_to_admin_new_order( $order, $is_admin_email ) {
+function techvertu_add_payment_method_to_admin_new_order( $order, $is_admin_email ) {
     echo '<div style="display:inline-block;vertical-align:top;width:48%;"><p><strong>Payment Method:<br></strong> ' . $order->payment_method_title . '</p></div>';
     echo '<div style="display:inline-block;vertical-align:top;width:48%;"><p><strong>Shipping Method:<br></strong> ' . $order->get_shipping_method . '</p></div>';
 }
