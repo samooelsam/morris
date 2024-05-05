@@ -1,7 +1,7 @@
 <?php 
 global $wp_query;
 $tax = get_queried_object();
-
+if(!is_404()) {
     ?>
 <figure class="image-wrapper woocommerce-banner clearfix">
     <?php get_template_part('includes/productsCategoryBanner', 'widget');?>
@@ -34,3 +34,4 @@ $tax = get_queried_object();
         
     </figcaption>
 </figure>
+<?php }?>
