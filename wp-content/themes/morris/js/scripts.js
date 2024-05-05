@@ -201,7 +201,7 @@ jQuery(document).ready(function(){
         var note = jQuery('#note').val();
         jQuery('#enquire-form input, #enquire-form textarea').removeClass('red');
         
-        if(quantity && senderEmail && businessName && firstname && firstNameTester == true && lastnameTester == true && lastname && phoneNumberTested == true && postalCodeResult == true && note){
+        if(quantity && senderEmail && businessName && firstname && firstNameTester == true && lastnameTester == true && lastname && postalCodeResult == true && note){
             jQuery('.spinner').removeClass('none');
             jQuery('.contact-submit').attr('disabled', 'disabled');
             jQuery('.techvertu-enquiry-form .alert').remove();
@@ -281,7 +281,6 @@ jQuery(document).ready(function(){
     function techvertu_mobile_number_tester(mobileNumber) {
         var regex = /^(?:(?:\(?(?:0(?:0|11)\)?[\s-]?\(?|\+)44\)?[\s-]?(?:\(?0\)?[\s-]?)?)|(?:\(?0))(?:(?:\d{5}\)?[\s-]?\d{4,5})|(?:\d{4}\)?[\s-]?(?:\d{5}|\d{3}[\s-]?\d{3}))|(?:\d{3}\)?[\s-]?\d{3}[\s-]?\d{3,4})|(?:\d{2}\)?[\s-]?\d{4}[\s-]?\d{4}))(?:[\s-]?(?:x|ext\.?|\#)\d{3,4})?$/;
         var result = regex.test(mobileNumber);
-        console.log(result);
         return result;
     }
     function techvertu_firstname_lastname_checker(selectedName){
