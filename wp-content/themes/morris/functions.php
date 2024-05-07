@@ -298,3 +298,12 @@ function techvertu_remove_rel( $args, $product ) {
     unset( $args['attributes']['rel'] );
     return $args;
 }
+
+add_filter('wpseo_robots', 'override_yoast_robots_directive');
+ 
+function override_yoast_robots_directive($robots) {
+    if ( (isset($_GET['add-to-cart']) && !empty($_GET['add-to-cart'])) || (isset($_GET['prID']) && !empty($_GET['prID'])) ) {
+        $robots = 'noindex, nofollow, nosnippet';
+    }
+    return $robots;
+}
