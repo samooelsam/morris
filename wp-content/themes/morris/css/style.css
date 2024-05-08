@@ -1290,7 +1290,8 @@ a.back-to-home {
     margin-top: 20px; }
   .single-page-wrapper li {
     list-style: disc;
-    list-style-position: inside; }
+    list-style-position: outside;
+    margin-left: 30px; }
   .single-page-wrapper a {
     font-size: 20px; }
   .single-page-wrapper h1, .single-page-wrapper h3 {
