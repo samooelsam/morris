@@ -97,7 +97,7 @@ if (!function_exists('morris_setup')) :
 
 endif;
 
-define( 'MORRIS_THEME_VERSION', '1.1.4' );
+define( 'MORRIS_THEME_VERSION', '1.1.5' );
 
 function morris_landing_scripts()
 {
@@ -267,7 +267,7 @@ function techvertu_send_enquiry() {
                 <strong style="width:200px;display: inline-block;"> Quantity:</strong>'.$quantity.'
                 <br> <strong style="width:200px;display: inline-block;">Message :</strong> <br>' .$note;
     if($to && $subject && $body && $phonenumber && $postCode && $note && $firstName && $lastName ) { //&& $recaptchaDecode->success == true && $recaptchaDecode->score > 0.5
-        wp_mail( 'info@morrismachinery.co.uk,sales@morrismachinery.co.uk,saman.tohidian@techvertu.co.uk,amin.mozaffar@techvertu.co.uk', $subject, $body, $headers ); //info@morrismachinery.co.uk
+        wp_mail( 'info@morrismachinery.co.uk', $subject, $body, $headers ); //info@morrismachinery.co.uk
         $successFlag = '1';
     }
     else {
