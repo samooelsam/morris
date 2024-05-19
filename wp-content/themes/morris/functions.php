@@ -307,3 +307,8 @@ function override_yoast_robots_directive($robots) {
     }
     return $robots;
 }
+add_action( 'wp_logout', 'morris_redirect_after_logout' );
+function morris_redirect_after_logout() {
+         wp_redirect( '/login' );
+         exit();
+}
